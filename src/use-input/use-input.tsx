@@ -1,4 +1,4 @@
-import React, { Dispatch, MutableRefObject, SetStateAction } from 'react'
+import React, { Dispatch, RefObject, SetStateAction } from 'react'
 import useCurrentState from '../utils/use-current-state'
 
 export type BindingsChangeTarget =
@@ -10,7 +10,7 @@ const useInput = (
 ): {
   state: string
   setState: Dispatch<SetStateAction<string>>
-  currentRef: MutableRefObject<string>
+  currentRef: RefObject<string>
   reset: () => void
   bindings: {
     value: string

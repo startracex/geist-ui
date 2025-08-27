@@ -1,13 +1,6 @@
-import {
-  Dispatch,
-  MutableRefObject,
-  SetStateAction,
-  useEffect,
-  useRef,
-  useState,
-} from 'react'
+import { Dispatch, RefObject, SetStateAction, useEffect, useRef, useState } from 'react'
 
-export type CurrentStateType<S> = [S, Dispatch<SetStateAction<S>>, MutableRefObject<S>]
+export type CurrentStateType<S> = [S, Dispatch<SetStateAction<S>>, RefObject<S>]
 
 const useCurrentState = <S>(initialState: S | (() => S)): CurrentStateType<S> => {
   const [state, setState] = useState<S>(() => {

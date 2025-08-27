@@ -1,4 +1,4 @@
-import { Dispatch, MutableRefObject, SetStateAction } from 'react'
+import { Dispatch, RefObject, SetStateAction } from 'react'
 import useCurrentState from '../utils/use-current-state'
 
 const useTabs = (
@@ -6,7 +6,7 @@ const useTabs = (
 ): {
   state: string
   setState: Dispatch<SetStateAction<string>>
-  currentRef: MutableRefObject<string>
+  currentRef: RefObject<string>
   bindings: {
     value: string
     onChange: (val: string) => void

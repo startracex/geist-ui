@@ -1,4 +1,4 @@
-import { Dispatch, MutableRefObject, SetStateAction } from 'react'
+import { Dispatch, RefObject, SetStateAction } from 'react'
 import useCurrentState from '../utils/use-current-state'
 import { ModalProps } from '../modal'
 
@@ -9,7 +9,7 @@ const useModal = (
 ): {
   visible: boolean
   setVisible: Dispatch<SetStateAction<boolean>>
-  currentRef: MutableRefObject<boolean>
+  currentRef: RefObject<boolean>
   bindings: ModalHooksBindings
 } => {
   const [visible, setVisible, currentRef] = useCurrentState<boolean>(initialVisible)

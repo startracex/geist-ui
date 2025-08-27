@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useEffect, useState } from 'react'
+import React, { RefObject, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import usePortal from '../utils/use-portal'
 import useResize from '../utils/use-resize'
@@ -10,7 +10,7 @@ import { getRefRect } from '../utils/layouts'
 import useClasses from '../use-classes'
 
 interface Props {
-  parent?: MutableRefObject<HTMLElement | null> | undefined
+  parent?: RefObject<HTMLElement | null> | undefined
   visible: boolean
   disableMatchWidth?: boolean
   getPopupContainer?: () => HTMLElement | null

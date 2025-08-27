@@ -1,4 +1,4 @@
-import { MutableRefObject } from 'react'
+import { RefObject } from 'react'
 
 export interface ReactiveDomReact {
   top: number
@@ -18,7 +18,7 @@ const defaultRect: ReactiveDomReact = {
   height: 0,
 }
 
-export const getRect = (ref: MutableRefObject<HTMLElement | null>): ReactiveDomReact => {
+export const getRect = (ref: RefObject<HTMLElement | null>): ReactiveDomReact => {
   if (!ref || !ref.current) return defaultRect
   const rect = ref.current.getBoundingClientRect()
   return {

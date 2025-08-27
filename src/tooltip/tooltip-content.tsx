@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useEffect, useMemo, useRef, useState } from 'react'
+import React, { RefObject, useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import useTheme from '../use-theme'
 import usePortal from '../utils/use-portal'
@@ -14,7 +14,7 @@ import { getRect } from './helper'
 import useClasses from '../use-classes'
 
 interface Props {
-  parent?: MutableRefObject<HTMLElement | null> | undefined
+  parent?: RefObject<HTMLElement | null> | undefined
   placement: Placement
   type: SnippetTypes
   visible: boolean

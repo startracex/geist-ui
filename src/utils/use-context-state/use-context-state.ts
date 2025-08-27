@@ -1,4 +1,4 @@
-import { Dispatch, MutableRefObject, SetStateAction, useMemo } from 'react'
+import { Dispatch, RefObject, SetStateAction, useMemo } from 'react'
 import useCurrentState from '../use-current-state'
 import { capitalize } from '../collections'
 
@@ -12,7 +12,7 @@ export type ContextStates<S> = S & ContextHandler<S> & { update: ContextHandlerW
 export type ContextStatesType<S> = [
   ContextStates<S>,
   Dispatch<SetStateAction<S>>,
-  MutableRefObject<S>,
+  RefObject<S>,
 ]
 
 export type ContextStateFilter<T> = <K extends keyof T>(

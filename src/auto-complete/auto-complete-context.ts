@@ -1,11 +1,11 @@
-import React, { MutableRefObject } from 'react'
+import React, { RefObject } from 'react'
 
 export interface AutoCompleteConfig {
   value?: string
   updateValue?: (val: string) => unknown
   visible?: boolean
   updateVisible?: (next: boolean) => unknown
-  ref?: MutableRefObject<HTMLElement | null>
+  ref?: RefObject<HTMLElement | null>
 }
 
 const defaultContext = {

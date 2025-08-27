@@ -1,4 +1,4 @@
-import React, { MutableRefObject } from 'react'
+import React, { RefObject } from 'react'
 
 export interface SelectConfig {
   value?: string | string[]
@@ -6,7 +6,7 @@ export interface SelectConfig {
   visible?: boolean
   updateVisible?: (next: boolean) => unknown
   disableAll?: boolean
-  ref?: MutableRefObject<HTMLElement | null>
+  ref?: RefObject<HTMLElement | null>
 }
 
 const defaultContext = {

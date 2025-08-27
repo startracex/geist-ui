@@ -1,7 +1,7 @@
-import { MutableRefObject, useEffect } from 'react'
+import { RefObject, useEffect } from 'react'
 
 const useDOMObserver = (
-  ref: MutableRefObject<HTMLElement | null> | undefined,
+  ref: RefObject<HTMLElement | null> | undefined,
   callback: MutationCallback = () => {},
 ) => {
   const config = { attributes: false, childList: true, subtree: true }
