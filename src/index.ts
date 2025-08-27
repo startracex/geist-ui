@@ -1,4 +1,3 @@
-// @ts-ignore
 /// <reference types="styled-jsx" />
 
 export { default as AutoComplete } from './auto-complete'

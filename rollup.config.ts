@@ -40,7 +40,14 @@ export default {
     babel({
       exclude: 'node_modules/**',
       extensions,
-      presets: ['@babel/preset-react'],
+      presets: [
+        [
+          '@babel/preset-react',
+          {
+            runtime: 'automatic',
+          },
+        ],
+      ],
       plugins: [
         [
           'styled-jsx/babel',
@@ -68,13 +75,18 @@ export default {
     {
       format: 'cjs',
       exports: 'named',
-      dir: 'dist/commonjs',
+      entryFileNames: '[name].cjs',
+      chunkFileNames: 'chunks/[hash].cjs',
+      hashCharacters: 'base36',
+      dir: 'dist',
       sourcemap: true,
       hoistTransitiveImports: false,
     },
     {
       format: 'esm',
-      dir: 'dist/module',
+      chunkFileNames: 'chunks/[hash].js',
+      hashCharacters: 'base36',
+      dir: 'dist',
       sourcemap: true,
       hoistTransitiveImports: false,
     },
