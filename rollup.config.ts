@@ -1,32 +1,15 @@
 import commonjs from '@rollup/plugin-commonjs'
 import babel from '@rollup/plugin-babel'
 import oxc from 'rollup-plugin-oxc'
-import fs from 'fs-extra'
-import path from 'path'
+import { extname } from 'path'
 import type { RollupOptions } from 'rollup'
+import { globSync } from 'fs'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
-const files = await fs.readdir('src')
-
-const components = (
-  await Promise.all(
-    files.map(async (name: string) => {
-      const unitPath = path.join('src', name)
-      const entry = path.join(unitPath, 'index.ts')
-
-      const stat = await fs.stat(unitPath)
-      if (!stat.isDirectory()) return null
-
-      const hasFile = await fs.pathExists(entry)
-      if (!hasFile) return null
-
-      return [name, entry]
-    }),
-  )
-).filter(Boolean) as [string, string][]
-
-const input = Object.fromEntries(components)
+const input = Object.fromEntries(
+  globSync('src/**/*.{ts,tsx}').map(file => [file.slice(4, -extname(file).length), file]),
+)
 
 export default {
   input,
