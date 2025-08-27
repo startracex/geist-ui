@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Drawer } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { Drawer } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 import { expectDrawerIsClosed, expectDrawerIsOpened } from './use-modal.test'
 import userEvent from '@testing-library/user-event'
 

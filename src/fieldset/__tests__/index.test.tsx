@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-import { Fieldset } from 'components'
+import { Fieldset } from '../../index'
 
 describe('Fieldset', () => {
   it('should mount correctly', () => {

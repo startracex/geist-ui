@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, ReactWrapper } from 'enzyme'
-import { useToasts, GeistProvider } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { useToasts, GeistProvider } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 import { ToastInput } from '../use-toast'
 
 const MockToast: React.FC<unknown> = () => {

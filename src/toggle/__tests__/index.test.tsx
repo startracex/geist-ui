@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, ReactWrapper } from 'enzyme'
-import { Toggle } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { Toggle } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 
 const expectToggleIsChecked = (wrapper: ReactWrapper) => {
   expect(wrapper.find('.checked').length).not.toBe(0)

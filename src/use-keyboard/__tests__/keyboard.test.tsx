@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { useKeyboard, KeyMod, KeyCode } from 'components'
+import { useKeyboard, KeyMod, KeyCode } from '../../index'
 import { renderHook, act } from '@testing-library/react-hooks'
 import { KeyboardResult } from '../use-keyboard'
 

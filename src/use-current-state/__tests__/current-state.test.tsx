@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { mount } from 'enzyme'
-import { useCurrentState } from 'components'
+import { useCurrentState } from '../../index'
 import { renderHook, act } from '@testing-library/react-hooks'
 
 describe('UseCurrentState', () => {

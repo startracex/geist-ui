@@ -1,4 +1,4 @@
-import { useClasses } from 'components'
+import { useClasses } from '../../index'
 import { expect } from '@jest/globals'
 
 describe('useClasses', () => {

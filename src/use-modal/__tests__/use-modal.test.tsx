@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { mount, ReactWrapper } from 'enzyme'
-import { Modal, useModal } from 'components'
-import { updateWrapper } from 'tests/utils'
+import { Modal, useModal } from '../../index'
+import { updateWrapper } from '../../../tests/utils'
 
 export const expectModalIsOpened = (wrapper: ReactWrapper) => {
   expect(wrapper.find('.position').length).not.toBe(0)

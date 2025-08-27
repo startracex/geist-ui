@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom/server'
 import { mount } from 'enzyme'
-import { Page, GeistProvider } from 'components'
+import { Page, GeistProvider } from '../../index'
 
 describe('Page', () => {
   it('should render correctly', () => {

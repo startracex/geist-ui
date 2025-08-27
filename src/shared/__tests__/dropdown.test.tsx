@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import { mount } from 'enzyme'
 import Dropdown from '../dropdown'
-import { nativeEvent, updateWrapper } from 'tests/utils'
-import { act } from 'react-dom/test-utils'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
+import { act } from 'react'
 
 const simulateGlobalClick = () => {
   document.body.dispatchEvent(

@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-import { ButtonDropdown } from 'components'
-import { mockNativeEvent, nativeEvent } from 'tests/utils'
+import { ButtonDropdown } from '../../index'
+import { mockNativeEvent, nativeEvent } from '../../../tests/utils'
 const Icon: React.FC<any> = () => <svg />
 
 describe('Button Dropdown', () => {

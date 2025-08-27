@@ -1,6 +1,6 @@
 import React from 'react'
 import { renderHook } from '@testing-library/react-hooks'
-import { useClickAway } from 'components'
+import { useClickAway } from '../../index'
 
 const simulateNativeClick = (el: Element) => {
   el.dispatchEvent(

@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import { Input } from 'components'
-import { nativeEvent } from 'tests/utils'
+import { Input } from '../../index'
+import { nativeEvent } from '../../../tests/utils'
 
 describe('InputPassword', () => {
   it('should render correctly', () => {

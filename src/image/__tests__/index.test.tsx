@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Image } from 'components'
-import { updateWrapper } from 'tests/utils'
+import { Image } from '../../index'
+import { updateWrapper } from '../../../tests/utils'
 
 const url =
   'data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA' +

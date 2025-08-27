@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-import { Collapse } from 'components'
-import { updateWrapper } from 'tests/utils'
+import { Collapse } from '../../index'
+import { updateWrapper } from '../../../tests/utils'
 
 describe('Collapse Group', () => {
   it('should render correctly', () => {

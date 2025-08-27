@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-import { Tag } from 'components'
+import { Tag } from '../../index'
 
 describe('Tag', () => {
   it('should render correctly', () => {

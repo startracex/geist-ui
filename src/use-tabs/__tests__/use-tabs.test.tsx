@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { mount } from 'enzyme'
-import { Tabs, useTabs } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { Tabs, useTabs } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 
 describe('UseTabs', () => {
   it('should follow changes with use-tabs', async () => {

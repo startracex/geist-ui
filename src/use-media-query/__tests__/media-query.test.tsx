@@ -1,4 +1,4 @@
-import { useMediaQuery } from 'components'
+import { useMediaQuery } from '../../index'
 import { renderHook } from '@testing-library/react-hooks'
 // @ts-ignore
 import mediaQuery from 'css-mediaquery'

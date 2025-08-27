@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Badge } from 'components'
+import { Badge } from '../../index'
 
 describe('BadgeAnchor', () => {
   it('should render correctly', () => {

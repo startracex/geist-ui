@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Tree } from 'components'
-import { nativeEvent } from 'tests/utils'
+import { Tree } from '../../index'
+import { nativeEvent } from '../../../tests/utils'
 import { TreeFile } from '../tree'
 
 const mockFiles: Array<TreeFile> = [

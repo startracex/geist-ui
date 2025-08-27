@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Pagination } from 'components'
-import { act } from 'react-dom/test-utils'
-import { updateWrapper } from 'tests/utils'
+import { Pagination } from '../../index'
+import { act } from 'react'
+import { updateWrapper } from '../../../tests/utils'
 
 describe('Pagination', () => {
   it('should render correctly', () => {

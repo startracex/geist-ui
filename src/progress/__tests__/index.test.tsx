@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Progress } from 'components'
+import { Progress } from '../../index'
 
 describe('Progress', () => {
   it('should render correctly', () => {

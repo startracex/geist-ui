@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import Backdrop from '../backdrop'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 
 describe('Backdrop', () => {
   it('should render correctly', () => {

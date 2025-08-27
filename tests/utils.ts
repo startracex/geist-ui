@@ -1,4 +1,4 @@
-import { act } from 'react-dom/test-utils'
+import { act } from 'react'
 import { ReactWrapper } from 'enzyme'
 
 export const sleep = (time: number) => {

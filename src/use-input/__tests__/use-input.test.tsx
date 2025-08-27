@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { mount } from 'enzyme'
-import { Input, useInput } from 'components'
+import { Input, useInput } from '../../index'
 
 describe('UseInput', () => {
   it('should follow change with use-input', () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Note } from 'components'
-import { updateWrapper } from 'tests/utils'
+import { Note } from '../../index'
+import { updateWrapper } from '../../../tests/utils'
 
 describe('Note', () => {
   it('should render correctly', () => {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount, ReactWrapper } from 'enzyme'
-import { Button, Tooltip, GeistProvider } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
-import { act } from 'react-dom/test-utils'
+import { Button, Tooltip, GeistProvider } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
+import { act } from 'react'
 
 const expectTooltipIsShow = (wrapper: ReactWrapper) => {
   expect(wrapper.find('.inner').length).not.toBe(0)

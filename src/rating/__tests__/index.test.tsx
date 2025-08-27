@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Rating } from 'components'
+import { Rating } from '../../index'
 import { mount } from 'enzyme'
-import { nativeEvent } from 'tests/utils'
+import { nativeEvent } from '../../../tests/utils'
 
 describe('Rating', () => {
   it('should render correctly', () => {

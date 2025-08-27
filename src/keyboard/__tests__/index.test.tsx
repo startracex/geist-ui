@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Keyboard } from 'components'
+import { Keyboard } from '../../index'
 
 describe('Keyboard', () => {
   it('should render correctly', () => {

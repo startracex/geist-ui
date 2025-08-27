@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'enzyme'
-import { CssBaseline, GeistProvider } from 'components'
+import { CssBaseline, GeistProvider } from '../../index'
 
 describe('CSSBaseline', () => {
   it('should render correctly', () => {

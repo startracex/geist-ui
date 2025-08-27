@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Page } from 'components'
+import { Page } from '../../index'
 
 describe('PageChild', () => {
   it('the component Page.Content should be injected automatically', () => {

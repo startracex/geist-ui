@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-import { Select } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { Select } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 
 describe('Select', () => {
   it('should render correctly', () => {

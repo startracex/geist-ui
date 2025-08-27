@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Fieldset } from 'components'
+import { Fieldset } from '../../index'
 
 describe('Fieldset Group', () => {
   it('should trigger callback when tab clicked', () => {

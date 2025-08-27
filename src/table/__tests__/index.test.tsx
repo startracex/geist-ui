@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Table, Code } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
-import { act } from 'react-dom/test-utils'
+import { Table, Code } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
+import { act } from 'react'
 import { TableColumnRender } from '../table-types'
 
 const data = [

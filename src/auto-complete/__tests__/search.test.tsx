@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-import { AutoComplete } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
-import { act } from 'react-dom/test-utils'
+import { AutoComplete } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
+import { act } from 'react'
 const mockOptions = [{ label: 'London', value: 'london' }]
 
 describe('AutoComplete Search', () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Modal } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { Modal } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 import {
   expectModalIsClosed,
   expectModalIsOpened,

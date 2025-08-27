@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Tabs } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { Tabs } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 
 describe('Tabs', () => {
   it('should render correctly', () => {

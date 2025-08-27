@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Spinner } from 'components'
+import { Spinner } from '../../index'
 
 describe('Spacer', () => {
   it('should render correctly', () => {

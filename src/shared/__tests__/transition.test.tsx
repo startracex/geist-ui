@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import CssTransition from '../css-transition'
-import { updateWrapper } from 'tests/utils'
+import { updateWrapper } from '../../../tests/utils'
 
 describe('CssTransition', () => {
   it('should render correctly', () => {

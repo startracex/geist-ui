@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, render } from 'enzyme'
-import { Display } from 'components'
+import { Display } from '../../index'
 
 describe('Display', () => {
   it('should render correctly', () => {

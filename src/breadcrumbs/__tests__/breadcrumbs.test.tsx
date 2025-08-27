@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Breadcrumbs } from 'components'
+import { Breadcrumbs } from '../../index'
 
 describe('Breadcrumbs', () => {
   it('should render correctly', () => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { mount } from 'enzyme'
-import { AutoComplete, useInput } from 'components'
+import { AutoComplete, useInput } from '../../index'
 
 describe('UseInput', () => {
   it('should follow change with use-input', () => {

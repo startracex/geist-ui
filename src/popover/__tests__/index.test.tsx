@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount, ReactWrapper } from 'enzyme'
-import { Popover } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
+import { Popover } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
 
 const expectPopoverIsShow = (wrapper: ReactWrapper) => {
   expect(wrapper.find('.inner').length).not.toBe(0)

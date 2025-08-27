@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Slider } from 'components'
-import { nativeEvent, updateWrapper } from 'tests/utils'
-import { act } from 'react-dom/test-utils'
+import { Slider } from '../../index'
+import { nativeEvent, updateWrapper } from '../../../tests/utils'
+import { act } from 'react'
 
 const triggerDrag = (el: HTMLElement, x = 0) => {
   window.Element.prototype.getBoundingClientRect = () =>

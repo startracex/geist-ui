@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { mount, ReactWrapper } from 'enzyme'
-import { Drawer, useModal } from 'components'
-import { updateWrapper } from 'tests/utils'
+import { Drawer, useModal } from '../../index'
+import { updateWrapper } from '../../../tests/utils'
 
 export const expectDrawerIsOpened = (wrapper: ReactWrapper) => {
   expect(wrapper.find('.position').length).not.toBe(0)
