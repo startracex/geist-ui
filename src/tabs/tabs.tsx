@@ -179,6 +179,7 @@ const TabsComponent: React.FC<React.PropsWithChildren<TabsProps>> = ({
   )
 }
 
+//@ts-ignore
 TabsComponent.defaultProps = defaultProps
 TabsComponent.displayName = 'GeistTabs'
 const Tabs = withScale(TabsComponent)

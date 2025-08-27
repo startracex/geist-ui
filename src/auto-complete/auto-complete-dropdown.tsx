@@ -66,6 +66,8 @@ const AutoCompleteDropdown: React.FC<
   )
 }
 
+//@ts-ignore
+//@ts-ignore
 AutoCompleteDropdown.defaultProps = defaultProps
 AutoCompleteDropdown.displayName = 'GeistAutoCompleteDropdown'
 export default AutoCompleteDropdown

@@ -140,6 +140,7 @@ const RatingComponent: React.FC<RatingProps> = ({
   )
 }
 
+//@ts-ignore
 RatingComponent.defaultProps = defaultProps
 RatingComponent.displayName = 'GeistRating'
 const Rating = withScale(RatingComponent)

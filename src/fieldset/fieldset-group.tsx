@@ -141,6 +141,7 @@ const FieldsetGroupComponent: React.FC<React.PropsWithChildren<FieldsetGroupProp
   )
 }
 
+//@ts-ignore
 FieldsetGroupComponent.defaultProps = defaultProps
 FieldsetGroupComponent.displayName = 'GeistFieldsetGroup'
 const FieldsetGroup = withScale(FieldsetGroupComponent)

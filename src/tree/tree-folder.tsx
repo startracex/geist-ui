@@ -155,6 +155,7 @@ const TreeFolder: React.FC<React.PropsWithChildren<TreeFolderProps>> = ({
   )
 }
 
+//@ts-ignore
 TreeFolder.defaultProps = defaultProps
 TreeFolder.displayName = 'GeistTreeFolder'
 export default TreeFolder

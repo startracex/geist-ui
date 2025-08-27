@@ -79,6 +79,7 @@ const SliderDot = React.forwardRef<
   },
 )
 
+//@ts-ignore
 SliderDot.defaultProps = defaultProps
 SliderDot.displayName = 'GeistSliderDot'
 export default SliderDot

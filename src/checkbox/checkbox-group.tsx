@@ -79,6 +79,7 @@ const CheckboxGroupComponent: React.FC<React.PropsWithChildren<CheckboxGroupProp
   )
 }
 
+//@ts-ignore
 CheckboxGroupComponent.defaultProps = defaultProps
 CheckboxGroupComponent.displayName = 'GeistCheckboxGroup'
 const CheckboxGroup = withScale(CheckboxGroupComponent)

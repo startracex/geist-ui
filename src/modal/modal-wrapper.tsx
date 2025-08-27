@@ -126,6 +126,7 @@ const ModalWrapper: React.FC<React.PropsWithChildren<ModalWrapperProps>> = ({
   )
 }
 
+//@ts-ignore
 ModalWrapper.defaultProps = defaultProps
 ModalWrapper.displayName = 'GeistModalWrapper'
 export default ModalWrapper

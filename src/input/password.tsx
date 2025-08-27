@@ -64,6 +64,7 @@ const InputPasswordComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 InputPasswordComponent.defaultProps = passwordDefaultProps
 InputPasswordComponent.displayName = 'GeistInputPassword'
 const InputPassword = withScale(InputPasswordComponent)

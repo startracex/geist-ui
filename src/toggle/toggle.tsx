@@ -175,6 +175,7 @@ const ToggleComponent: React.FC<ToggleProps> = ({
   )
 }
 
+//@ts-ignore
 ToggleComponent.defaultProps = defaultProps
 ToggleComponent.displayName = 'GeistToggle'
 const Toggle = withScale(ToggleComponent)

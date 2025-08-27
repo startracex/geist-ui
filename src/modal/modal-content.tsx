@@ -52,6 +52,7 @@ const ModalContentComponent: React.FC<React.PropsWithChildren<ModalContentProps>
   )
 }
 
+//@ts-ignore
 ModalContentComponent.defaultProps = defaultProps
 ModalContentComponent.displayName = 'GeistModalContent'
 const ModalContent = withScale(ModalContentComponent)

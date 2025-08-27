@@ -98,6 +98,7 @@ const BadgeAnchor: React.FC<React.PropsWithChildren<BadgeAnchorProps>> = ({
   )
 }
 
+//@ts-ignore
 BadgeAnchor.defaultProps = defaultProps
 BadgeAnchor.displayName = 'GeistBadgeAnchor'
 export default BadgeAnchor

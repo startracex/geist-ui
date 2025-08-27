@@ -106,6 +106,7 @@ const TreeFile: React.FC<React.PropsWithChildren<TreeFileProps>> = ({
   )
 }
 
+//@ts-ignore
 TreeFile.defaultProps = defaultProps
 TreeFile.displayName = 'GeistTreeFile'
 export default TreeFile

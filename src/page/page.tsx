@@ -118,6 +118,7 @@ const PageComponent: React.FC<React.PropsWithChildren<PageProps>> = ({
   )
 }
 
+//@ts-ignore
 PageComponent.defaultProps = defaultProps
 PageComponent.displayName = 'GeistPage'
 const Page = withScale(PageComponent)

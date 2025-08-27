@@ -51,6 +51,7 @@ const AutoCompleteSearchComponent: React.FC<
   )
 }
 
+//@ts-ignore
 AutoCompleteSearchComponent.defaultProps = defaultProps
 AutoCompleteSearchComponent.displayName = 'GeistAutoCompleteSearch'
 const AutoCompleteSearch = withScale(AutoCompleteSearchComponent)

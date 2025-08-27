@@ -122,6 +122,7 @@ const ProgressComponent: React.FC<ProgressProps> = ({
   )
 }
 
+//@ts-ignore
 ProgressComponent.defaultProps = defaultProps
 ProgressComponent.displayName = 'GeistProgress'
 const Progress = withScale(ProgressComponent)

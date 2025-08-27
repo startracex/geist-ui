@@ -41,6 +41,7 @@ const RadioDescriptionComponent: React.FC<
   )
 }
 
+//@ts-ignore
 RadioDescriptionComponent.defaultProps = defaultProps
 RadioDescriptionComponent.displayName = 'GeistRadioDescription'
 const RadioDescription = withScale(RadioDescriptionComponent)

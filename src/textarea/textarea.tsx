@@ -164,6 +164,7 @@ const TextareaComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 TextareaComponent.defaultProps = defaultProps
 TextareaComponent.displayName = 'GeistTextarea'
 const Textarea = withScale(TextareaComponent)

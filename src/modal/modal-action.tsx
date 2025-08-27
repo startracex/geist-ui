@@ -105,6 +105,7 @@ const ModalActionComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 ModalActionComponent.defaultProps = defaultProps
 ModalActionComponent.displayName = 'GeistModalAction'
 const ModalAction = withScale(ModalActionComponent)

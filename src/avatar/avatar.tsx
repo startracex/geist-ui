@@ -95,6 +95,7 @@ const AvatarComponent: React.FC<AvatarProps> = ({
   )
 }
 
+//@ts-ignore
 AvatarComponent.defaultProps = defaultProps
 AvatarComponent.displayName = 'GeistAvatar'
 const Avatar = withScale(AvatarComponent)

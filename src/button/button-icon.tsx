@@ -61,6 +61,8 @@ const ButtonIcon: React.FC<React.PropsWithChildren<ButtonIconProps>> = ({
   )
 }
 
+// @ts-ignore
+//@ts-ignore
 ButtonIcon.defaultProps = defaultProps
 ButtonIcon.displayName = 'GeistButtonIcon'
 export default ButtonIcon

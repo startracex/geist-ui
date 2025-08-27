@@ -161,6 +161,7 @@ const SnippetComponent: React.FC<React.PropsWithChildren<SnippetProps>> = ({
   )
 }
 
+//@ts-ignore
 SnippetComponent.defaultProps = defaultProps
 SnippetComponent.displayName = 'GeistSnippet'
 const Snippet = withScale(SnippetComponent)

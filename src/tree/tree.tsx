@@ -100,6 +100,7 @@ const Tree: React.FC<React.PropsWithChildren<TreeProps>> = ({
   )
 }
 
+//@ts-ignore
 Tree.defaultProps = defaultProps
 Tree.displayName = 'GeistTree'
 export default Tree

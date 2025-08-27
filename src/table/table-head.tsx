@@ -107,6 +107,7 @@ const TableHead = <TableDataItem extends TableDataItemBase>(
   )
 }
 
+//@ts-ignore
 TableHead.defaultProps = defaultProps
 TableHead.displayName = 'GeistTableHead'
 export default TableHead

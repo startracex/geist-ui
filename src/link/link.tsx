@@ -92,6 +92,7 @@ const LinkComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 LinkComponent.defaultProps = defaultProps
 LinkComponent.displayName = 'GeistLink'
 const Link = withScale(LinkComponent)

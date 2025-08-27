@@ -89,6 +89,7 @@ const UserComponent: React.FC<React.PropsWithChildren<UserProps>> = ({
   )
 }
 
+//@ts-ignore
 UserComponent.defaultProps = defaultProps
 UserComponent.displayName = 'GeistUser'
 const User = withScale(UserComponent)

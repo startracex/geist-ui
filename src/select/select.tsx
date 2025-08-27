@@ -326,6 +326,7 @@ const SelectComponent = React.forwardRef<SelectRef, React.PropsWithChildren<Sele
   },
 )
 
+//@ts-ignore
 SelectComponent.defaultProps = defaultProps
 SelectComponent.displayName = 'GeistSelect'
 const Select = withScale(SelectComponent)

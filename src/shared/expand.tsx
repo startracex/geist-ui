@@ -89,6 +89,7 @@ const Expand: React.FC<React.PropsWithChildren<ExpandProps>> = ({
   )
 }
 
+//@ts-ignore
 Expand.defaultProps = defaultProps
 Expand.displayName = 'GeistExpand'
 export default Expand

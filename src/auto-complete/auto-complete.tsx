@@ -243,6 +243,7 @@ const AutoCompleteComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 AutoCompleteComponent.defaultProps = defaultProps
 AutoCompleteComponent.displayName = 'GeistAutoComplete'
 const AutoComplete = withScale(AutoCompleteComponent)

@@ -109,6 +109,7 @@ const TagComponent: React.FC<React.PropsWithChildren<TagProps>> = ({
   )
 }
 
+//@ts-ignore
 TagComponent.defaultProps = defaultProps
 TagComponent.displayName = 'GeistTag'
 const Tag = withScale(TagComponent)

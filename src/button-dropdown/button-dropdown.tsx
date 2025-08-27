@@ -206,6 +206,7 @@ const ButtonDropdownComponent: React.FC<React.PropsWithChildren<ButtonDropdownPr
 }
 
 ButtonDropdownComponent.displayName = 'GeistButtonDropdown'
+//@ts-ignore
 ButtonDropdownComponent.defaultProps = defaultProps
 const ButtonDropdown = withScale(ButtonDropdownComponent)
 export default ButtonDropdown

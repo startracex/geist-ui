@@ -49,6 +49,7 @@ const ModalTitleComponent: React.FC<React.PropsWithChildren<ModalTitleProps>> = 
   )
 }
 
+//@ts-ignore
 ModalTitleComponent.defaultProps = defaultProps
 ModalTitleComponent.displayName = 'GeistModalTitle'
 const ModalTitle = withScale(ModalTitleComponent)

@@ -52,6 +52,7 @@ const ImageSkeleton: React.FC<ImageSkeletonProps> = React.memo(
   },
 )
 
+//@ts-ignore
 ImageSkeleton.defaultProps = defaultProps
 ImageSkeleton.displayName = 'GeistImageSkeleton'
 export default ImageSkeleton

@@ -104,6 +104,7 @@ const FieldsetComponent: React.FC<React.PropsWithChildren<FieldsetProps>> = ({
   )
 }
 
+//@ts-ignore
 FieldsetComponent.defaultProps = defaultProps
 FieldsetComponent.displayName = 'GeistFieldset'
 const Fieldset = withScale(FieldsetComponent)

@@ -117,6 +117,7 @@ function TableComponent<TableDataItem extends TableDataItemBase>(
   )
 }
 
+//@ts-ignore
 TableComponent.defaultProps = defaultProps
 TableComponent.displayName = 'GeistTable'
 TableComponent.Column = TableColumn

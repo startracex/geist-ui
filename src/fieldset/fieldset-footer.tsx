@@ -49,6 +49,7 @@ const FieldsetFooterComponent: React.FC<React.PropsWithChildren<FieldsetFooterPr
   )
 }
 
+//@ts-ignore
 FieldsetFooterComponent.defaultProps = defaultProps
 FieldsetFooterComponent.displayName = 'GeistFieldsetFooter'
 const FieldsetFooter = withScale(FieldsetFooterComponent)

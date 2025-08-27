@@ -60,6 +60,7 @@ const BreadcrumbsItem = React.forwardRef<
   },
 )
 
+//@ts-ignore
 BreadcrumbsItem.defaultProps = defaultProps
 BreadcrumbsItem.displayName = 'GeistBreadcrumbsItem'
 export default BreadcrumbsItem

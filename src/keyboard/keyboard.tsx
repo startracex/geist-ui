@@ -74,6 +74,7 @@ const KeyboardComponent: React.FC<React.PropsWithChildren<KeyboardProps>> = ({
   )
 }
 
+//@ts-ignore
 KeyboardComponent.defaultProps = defaultProps
 KeyboardComponent.displayName = 'GeistKeyboard'
 const Keyboard = withScale(KeyboardComponent)

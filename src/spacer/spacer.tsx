@@ -36,6 +36,7 @@ const SpacerComponent: React.FC<SpacerProps> = ({
   )
 }
 
+//@ts-ignore
 SpacerComponent.defaultProps = defaultProps
 SpacerComponent.displayName = 'GeistSpacer'
 const Spacer = withScale(SpacerComponent)

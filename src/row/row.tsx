@@ -75,6 +75,7 @@ const Container: React.FC<React.PropsWithChildren<RowProps>> = ({
   )
 }
 
+//@ts-ignore
 Container.defaultProps = defaultProps
 Container.displayName = 'GeistContainer'
 export default Container

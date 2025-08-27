@@ -177,6 +177,7 @@ const RadioComponent: React.FC<React.PropsWithChildren<RadioProps>> = ({
   )
 }
 
+//@ts-ignore
 RadioComponent.defaultProps = defaultProps
 RadioComponent.displayName = 'GeistRadio'
 const Radio = withScale(RadioComponent)

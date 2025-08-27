@@ -33,6 +33,7 @@ const FieldsetSubtitle: React.FC<React.PropsWithChildren<FieldsetSubtitleProps>>
   )
 }
 
+//@ts-ignore
 FieldsetSubtitle.defaultProps = defaultProps
 FieldsetSubtitle.displayName = 'GeistFieldsetSubtitle'
 export default FieldsetSubtitle

@@ -85,6 +85,7 @@ const DrawerComponent: React.FC<React.PropsWithChildren<DrawerProps>> = ({
   )
 }
 
+//@ts-ignore
 DrawerComponent.defaultProps = defaultProps
 DrawerComponent.displayName = 'GeistDrawer'
 const Drawer = withScale(DrawerComponent)

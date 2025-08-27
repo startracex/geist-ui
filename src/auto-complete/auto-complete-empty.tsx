@@ -22,6 +22,7 @@ const AutoCompleteEmpty: React.FC<React.PropsWithChildren<AutoCompleteEmptyProps
   return <AutoCompleteSearch className={className}>{children}</AutoCompleteSearch>
 }
 
+//@ts-ignore
 AutoCompleteEmpty.defaultProps = defaultProps
 AutoCompleteEmpty.displayName = 'GeistAutoCompleteEmpty'
 

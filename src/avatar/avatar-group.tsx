@@ -53,6 +53,7 @@ const AvatarGroupComponent: React.FC<React.PropsWithChildren<AvatarGroupProps>> 
   )
 }
 
+//@ts-ignore
 AvatarGroupComponent.defaultProps = defaultProps
 AvatarGroupComponent.displayName = 'GeistAvatarGroup'
 const AvatarGroup = withScale(AvatarGroupComponent)

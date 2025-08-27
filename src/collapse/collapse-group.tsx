@@ -79,6 +79,7 @@ const CollapseGroupComponent: React.FC<React.PropsWithChildren<CollapseGroupProp
   )
 }
 
+//@ts-ignore
 CollapseGroupComponent.defaultProps = defaultProps
 CollapseGroupComponent.displayName = 'GeistCollapseGroup'
 const CollapseGroup = withScale(CollapseGroupComponent)

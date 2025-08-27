@@ -73,6 +73,7 @@ const DotComponent: React.FC<React.PropsWithChildren<DotProps>> = ({
   )
 }
 
+//@ts-ignore
 DotComponent.defaultProps = defaultProps
 DotComponent.displayName = 'GeistDot'
 const Dot = withScale(DotComponent)

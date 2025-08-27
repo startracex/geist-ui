@@ -46,6 +46,7 @@ const ModalSubtitleComponent: React.FC<React.PropsWithChildren<ModalSubtitleProp
   )
 }
 
+//@ts-ignore
 ModalSubtitleComponent.defaultProps = defaultProps
 ModalSubtitleComponent.displayName = 'GeistModalSubtitle'
 const ModalSubtitle = withScale(ModalSubtitleComponent)

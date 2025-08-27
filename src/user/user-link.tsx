@@ -41,6 +41,7 @@ const UserLink = React.forwardRef<
   },
 )
 
+//@ts-ignore
 UserLink.defaultProps = defaultProps
 UserLink.displayName = 'GeistUserLink'
 export default UserLink

@@ -100,6 +100,7 @@ const PopoverComponent: React.FC<React.PropsWithChildren<PopoverProps>> = ({
   )
 }
 
+//@ts-ignore
 PopoverComponent.defaultProps = defaultProps
 PopoverComponent.displayName = 'GeistPopover'
 const Popover = withScale(PopoverComponent)

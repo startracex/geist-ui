@@ -115,6 +115,7 @@ const TextComponent: React.FC<React.PropsWithChildren<TextProps>> = ({
   )
 }
 
+//@ts-ignore
 TextComponent.defaultProps = defaultProps
 TextComponent.displayName = 'GeistText'
 const Text = withScale(TextComponent)

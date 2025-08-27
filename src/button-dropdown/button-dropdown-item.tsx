@@ -82,6 +82,7 @@ const ButtonDropdownItem: React.FC<React.PropsWithChildren<ButtonDropdownItemPro
   )
 }
 
+//@ts-ignore
 ButtonDropdownItem.defaultProps = defaultProps
 ButtonDropdownItem.displayName = 'GeistButtonDropdownItem'
 export default ButtonDropdownItem

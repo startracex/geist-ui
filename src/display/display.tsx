@@ -79,6 +79,7 @@ const DisplayComponent: React.FC<React.PropsWithChildren<DisplayProps>> = ({
   )
 }
 
+//@ts-ignore
 DisplayComponent.defaultProps = defaultProps
 DisplayComponent.displayName = 'GeistDisplay'
 const Display = withScale(DisplayComponent)

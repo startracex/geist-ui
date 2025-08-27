@@ -183,6 +183,7 @@ const SliderComponent: React.FC<React.PropsWithChildren<SliderProps>> = ({
   )
 }
 
+//@ts-ignore
 SliderComponent.defaultProps = defaultProps
 SliderComponent.displayName = 'GeistSlider'
 const Slider = withScale(SliderComponent)

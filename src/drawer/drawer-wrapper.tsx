@@ -161,6 +161,7 @@ const DrawerWrapper: React.FC<React.PropsWithChildren<DrawerWrapperProps>> = ({
   )
 }
 
+//@ts-ignore
 DrawerWrapper.defaultProps = defaultProps
 DrawerWrapper.displayName = 'GeistDrawerWrapper'
 export default DrawerWrapper

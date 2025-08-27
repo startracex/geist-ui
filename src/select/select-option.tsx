@@ -134,6 +134,7 @@ const SelectOptionComponent: React.FC<React.PropsWithChildren<SelectOptionProps>
   )
 }
 
+//@ts-ignore
 SelectOptionComponent.defaultProps = defaultProps
 SelectOptionComponent.displayName = 'GeistSelectOption'
 const SelectOption = withScale(SelectOptionComponent)

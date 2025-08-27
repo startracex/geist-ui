@@ -70,6 +70,7 @@ const DescriptionComponent: React.FC<DescriptionProps> = ({
   )
 }
 
+//@ts-ignore
 DescriptionComponent.defaultProps = defaultProps
 DescriptionComponent.displayName = 'GeistDescription'
 const Description = withScale(DescriptionComponent)

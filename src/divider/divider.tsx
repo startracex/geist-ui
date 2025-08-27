@@ -102,6 +102,7 @@ const DividerComponent: React.FC<React.PropsWithChildren<DividerProps>> = ({
   )
 }
 
+//@ts-ignore
 DividerComponent.defaultProps = defaultProps
 DividerComponent.displayName = 'GeistDivider'
 const Divider = withScale(DividerComponent)

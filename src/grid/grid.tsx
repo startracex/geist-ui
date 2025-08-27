@@ -39,6 +39,7 @@ const GridComponent: React.FC<React.PropsWithChildren<GridProps>> = ({
   )
 }
 
+//@ts-ignore
 GridComponent.defaultProps = defaultProps
 GridComponent.displayName = 'GeistGrid'
 const Grid = withScale(GridComponent)

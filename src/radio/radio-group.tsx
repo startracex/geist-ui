@@ -82,6 +82,7 @@ const RadioGroupComponent: React.FC<React.PropsWithChildren<RadioGroupProps>> = 
   )
 }
 
+//@ts-ignore
 RadioGroupComponent.defaultProps = defaultProps
 RadioGroupComponent.displayName = 'GeistRadioGroup'
 const RadioGroup = withScale(RadioGroupComponent)

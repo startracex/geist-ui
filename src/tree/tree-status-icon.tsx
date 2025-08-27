@@ -45,6 +45,7 @@ const TreeStatusIcon: React.FC<TreeStatusIconProps> = ({
   )
 }
 
+//@ts-ignore
 TreeStatusIcon.defaultProps = defaultProps
 TreeStatusIcon.displayName = 'GeistTreeStatusIcon'
 export default TreeStatusIcon

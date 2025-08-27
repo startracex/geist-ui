@@ -148,6 +148,7 @@ const TabsItemComponent: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
   return isActive ? <>{children}</> : null
 }
 
+//@ts-ignore
 TabsItemComponent.defaultProps = defaultProps
 TabsItemComponent.displayName = 'GeistTabsItem'
 const TabsItem = withScale(TabsItemComponent)

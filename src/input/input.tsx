@@ -262,6 +262,7 @@ const InputComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 InputComponent.defaultProps = defaultProps
 InputComponent.displayName = 'GeistInput'
 const Input = withScale(InputComponent)

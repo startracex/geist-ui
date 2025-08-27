@@ -137,6 +137,7 @@ const CollapseComponent: React.FC<React.PropsWithChildren<CollapseProps>> = ({
   )
 }
 
+//@ts-ignore
 CollapseComponent.defaultProps = defaultProps
 CollapseComponent.displayName = 'GeistCollapse'
 const Collapse = withScale(CollapseComponent)

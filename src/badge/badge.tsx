@@ -80,6 +80,7 @@ const BadgeComponent: React.FC<React.PropsWithChildren<BadgeProps>> = ({
   )
 }
 
+//@ts-ignore
 BadgeComponent.defaultProps = defaultProps
 BadgeComponent.displayName = 'GeistBadge'
 const Badge = withScale(BadgeComponent)

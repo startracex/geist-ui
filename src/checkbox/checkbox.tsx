@@ -154,6 +154,7 @@ const CheckboxComponent: React.FC<CheckboxProps> = ({
   )
 }
 
+//@ts-ignore
 CheckboxComponent.defaultProps = defaultProps
 CheckboxComponent.displayName = 'GeistCheckbox'
 const Checkbox = withScale(CheckboxComponent)

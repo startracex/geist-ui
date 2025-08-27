@@ -53,6 +53,7 @@ const GridContainerComponent: React.FC<React.PropsWithChildren<GridContainerProp
   )
 }
 
+//@ts-ignore
 GridContainerComponent.defaultProps = defaultProps
 GridContainerComponent.displayName = 'GeistGridContainer'
 const GridContainer = withScale(GridContainerComponent)

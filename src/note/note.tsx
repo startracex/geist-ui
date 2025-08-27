@@ -100,6 +100,7 @@ export const NoteComponent: React.FC<React.PropsWithChildren<NoteProps>> = ({
   )
 }
 
+//@ts-ignore
 NoteComponent.defaultProps = defaultProps
 NoteComponent.displayName = 'GeistNote'
 const Note = withScale(NoteComponent)

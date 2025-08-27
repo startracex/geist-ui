@@ -70,6 +70,7 @@ const CssTransition: React.FC<React.PropsWithChildren<CssTransitionProps>> = ({
   })
 }
 
+//@ts-ignore
 CssTransition.defaultProps = defaultProps
 CssTransition.displayName = 'GeistCssTransition'
 export default CssTransition

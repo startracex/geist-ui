@@ -91,6 +91,7 @@ const ImageComponent: React.FC<ImageProps> = ({
   )
 }
 
+//@ts-ignore
 ImageComponent.defaultProps = defaultProps
 ImageComponent.displayName = 'GeistImage'
 const Image = withScale(ImageComponent)

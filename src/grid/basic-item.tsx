@@ -172,6 +172,7 @@ const GridBasicItem: React.FC<React.PropsWithChildren<GridBasicItemProps>> = ({
   )
 }
 
+//@ts-ignore
 GridBasicItem.defaultProps = defaultProps
 GridBasicItem.displayName = 'GeistGridBasicItem'
 export default GridBasicItem

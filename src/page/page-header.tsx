@@ -46,6 +46,7 @@ const PageHeaderComponent: React.FC<React.PropsWithChildren<PageHeaderProps>> = 
   )
 }
 
+//@ts-ignore
 PageHeaderComponent.defaultProps = defaultProps
 PageHeaderComponent.displayName = 'GeistPageHeader'
 const PageHeader = withScale(PageHeaderComponent)

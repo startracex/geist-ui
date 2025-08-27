@@ -39,6 +39,7 @@ const Separator: React.FC<React.PropsWithChildren<BreadcrumbsSeparatorProps>> = 
   )
 }
 
+//@ts-ignore
 Separator.defaultProps = defaultProps
 Separator.displayName = 'GeistBreadcrumbsSeparator'
 const BreadcrumbsSeparator = withScale(Separator)

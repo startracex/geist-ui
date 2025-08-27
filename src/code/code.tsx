@@ -108,6 +108,7 @@ const CodeComponent: React.FC<React.PropsWithChildren<CodeProps>> = ({
   )
 }
 
+//@ts-ignore
 CodeComponent.defaultProps = defaultProps
 CodeComponent.displayName = 'GeistCode'
 const Code = withScale(CodeComponent)

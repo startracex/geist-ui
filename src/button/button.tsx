@@ -220,6 +220,7 @@ const ButtonComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 ButtonComponent.defaultProps = defaultProps
 ButtonComponent.displayName = 'GeistButton'
 const Button = withScale(ButtonComponent)

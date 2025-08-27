@@ -71,6 +71,7 @@ const SelectDropdown = React.forwardRef<
   },
 )
 
+//@ts-ignore
 SelectDropdown.defaultProps = defaultProps
 SelectDropdown.displayName = 'GeistSelectDropdown'
 export default SelectDropdown

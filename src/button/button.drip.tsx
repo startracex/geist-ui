@@ -85,6 +85,7 @@ const ButtonDrip: React.FC<ButtonDrip> = ({
   )
 }
 
+//@ts-ignore
 ButtonDrip.defaultProps = defaultProps
 ButtonDrip.displayName = 'GeistButtonDrip'
 export default ButtonDrip

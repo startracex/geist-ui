@@ -36,6 +36,7 @@ const PageFooterComponent: React.FC<React.PropsWithChildren<PageFooterProps>> = 
   )
 }
 
+//@ts-ignore
 PageFooterComponent.defaultProps = defaultProps
 PageFooterComponent.displayName = 'GeistPageFooter'
 const PageFooter = withScale(PageFooterComponent)

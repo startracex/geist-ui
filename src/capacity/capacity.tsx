@@ -71,6 +71,7 @@ const CapacityComponent: React.FC<CapacityProps> = ({
   )
 }
 
+//@ts-ignore
 CapacityComponent.defaultProps = defaultProps
 CapacityComponent.displayName = 'GeistCapacity'
 const Capacity = withScale(CapacityComponent)

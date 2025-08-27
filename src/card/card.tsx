@@ -91,6 +91,7 @@ const CardComponent: React.FC<React.PropsWithChildren<CardProps>> = ({
   )
 }
 
+//@ts-ignore
 CardComponent.defaultProps = defaultProps
 CardComponent.displayName = 'GeistCard'
 const Card = withScale(CardComponent)

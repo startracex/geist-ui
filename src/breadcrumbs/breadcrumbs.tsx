@@ -90,6 +90,7 @@ const BreadcrumbsComponent: React.FC<React.PropsWithChildren<BreadcrumbsProps>> 
   )
 }
 
+//@ts-ignore
 BreadcrumbsComponent.defaultProps = defaultProps
 BreadcrumbsComponent.displayName = 'GeistBreadcrumbs'
 const Breadcrumbs = withScale(BreadcrumbsComponent)

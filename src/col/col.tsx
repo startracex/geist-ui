@@ -44,6 +44,7 @@ const Col: React.FC<React.PropsWithChildren<ColProps>> = ({
   )
 }
 
+//@ts-ignore
 Col.defaultProps = defaultProps
 Col.displayName = 'GeistCol'
 export default Col

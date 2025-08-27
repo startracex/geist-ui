@@ -137,6 +137,7 @@ const SpinnerComponent: React.FC<SpinnerProps> = ({
   )
 }
 
+//@ts-ignore
 SpinnerComponent.defaultProps = defaultProps
 SpinnerComponent.displayName = 'GeistSpinner'
 const Spinner = withScale(SpinnerComponent)

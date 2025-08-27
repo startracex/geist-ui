@@ -35,6 +35,7 @@ const PageContentComponent: React.FC<React.PropsWithChildren<PageContentProps>> 
   )
 }
 
+//@ts-ignore
 PageContentComponent.defaultProps = defaultProps
 PageContentComponent.displayName = 'GeistPageContent'
 const PageContent = withScale(PageContentComponent)

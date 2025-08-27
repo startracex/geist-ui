@@ -39,6 +39,7 @@ const FieldsetTitle: React.FC<React.PropsWithChildren<FieldsetTitleProps>> = ({
   )
 }
 
+//@ts-ignore
 FieldsetTitle.defaultProps = defaultProps
 FieldsetTitle.displayName = 'GeistFieldsetTitle'
 export default FieldsetTitle

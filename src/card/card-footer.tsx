@@ -57,6 +57,7 @@ const CardFooterComponent: React.FC<React.PropsWithChildren<CardFooterProps>> = 
   )
 }
 
+//@ts-ignore
 CardFooterComponent.defaultProps = defaultProps
 CardFooterComponent.displayName = 'GeistCardFooter'
 const CardFooter = withScale(CardFooterComponent)

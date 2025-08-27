@@ -108,6 +108,7 @@ const PaginationComponent: React.FC<React.PropsWithChildren<PaginationProps>> = 
   )
 }
 
+//@ts-ignore
 PaginationComponent.defaultProps = defaultProps
 PaginationComponent.displayName = 'GeistPagination'
 const Pagination = withScale(PaginationComponent)

@@ -135,6 +135,7 @@ const LoadingComponent: React.FC<React.PropsWithChildren<LoadingProps>> = ({
   )
 }
 
+//@ts-ignore
 LoadingComponent.defaultProps = defaultProps
 LoadingComponent.displayName = 'GeistLoading'
 const Loading = withScale(LoadingComponent)

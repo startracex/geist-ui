@@ -119,6 +119,7 @@ const ButtonGroupComponent: React.FC<React.PropsWithChildren<ButtonGroupProps>> 
   )
 }
 
+//@ts-ignore
 ButtonGroupComponent.defaultProps = defaultProps
 ButtonGroupComponent.displayName = 'GeistButtonGroup'
 const ButtonGroup = withScale(ButtonGroupComponent)

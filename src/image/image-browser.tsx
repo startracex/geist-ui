@@ -202,6 +202,7 @@ const ImageBrowserComponent = React.forwardRef<
   },
 )
 
+//@ts-ignore
 ImageBrowserComponent.defaultProps = defaultProps
 ImageBrowserComponent.displayName = 'GeistImageBrowser'
 const ImageBrowser = withScale(ImageBrowserComponent)

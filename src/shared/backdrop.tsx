@@ -129,6 +129,7 @@ const Backdrop: React.FC<React.PropsWithChildren<BackdropProps>> = React.memo(
   },
 )
 
+//@ts-ignore
 Backdrop.defaultProps = defaultProps
 Backdrop.displayName = 'GeistBackdrop'
 export default Backdrop
