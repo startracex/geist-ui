@@ -7,13 +7,12 @@ import type { RollupOptions } from 'rollup'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
-const componentsPath = 'components'
-const files = await fs.readdir(componentsPath)
+const files = await fs.readdir('src')
 
 const components = (
   await Promise.all(
     files.map(async (name: string) => {
-      const unitPath = path.join(componentsPath, name)
+      const unitPath = path.join('src', name)
       const entry = path.join(unitPath, 'index.ts')
 
       const stat = await fs.stat(unitPath)

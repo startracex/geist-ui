@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import useSSR from '../utils/use-ssr'
+import useSSR from './use-ssr'
 import { getId } from './collections'
 
 const createElement = (id: string): HTMLElement => {

@@ -2,7 +2,7 @@ import React, { CSSProperties, useEffect } from 'react'
 import type { NormalTypes } from '../utils/prop-types'
 import { defaultToastLayout, useGeistUIContext } from '../utils/use-geist-ui-context'
 import { getId } from '../utils/collections'
-import { ToastPlacement } from '../use-toasts/helpers'
+import { ToastPlacement } from './helpers'
 
 export interface ToastAction {
   name: string
