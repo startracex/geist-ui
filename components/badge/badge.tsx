@@ -39,7 +39,7 @@ const BadgeComponent: React.FC<React.PropsWithChildren<BadgeProps>> = ({
   children,
   dot,
   ...props
-}: BadgeProps & typeof defaultProps) => {
+}: BadgeProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const bg = useMemo(() => getBgColor(type, theme.palette), [type, theme.palette])

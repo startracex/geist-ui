@@ -41,7 +41,7 @@ const DividerComponent: React.FC<React.PropsWithChildren<DividerProps>> = ({
   children,
   className,
   ...props
-}: React.PropsWithChildren<DividerProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<DividerProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const classes = useClasses('divider', className)

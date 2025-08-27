@@ -16,7 +16,7 @@ const FieldsetTitle: React.FC<React.PropsWithChildren<FieldsetTitleProps>> = ({
   className,
   children,
   ...props
-}: React.PropsWithChildren<FieldsetTitleProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<FieldsetTitleProps>) => {
   const classes = useClasses('title', className)
 
   return (

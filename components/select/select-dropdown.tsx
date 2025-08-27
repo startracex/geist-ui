@@ -32,7 +32,7 @@ const SelectDropdown = React.forwardRef<
       dropdownStyle,
       disableMatchWidth,
       getPopupContainer,
-    }: React.PropsWithChildren<SelectDropdownProps> & typeof defaultProps,
+    }: React.PropsWithChildren<SelectDropdownProps>,
     dropdownRef,
   ) => {
     const theme = useTheme()

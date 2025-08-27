@@ -30,7 +30,7 @@ const RadioGroupComponent: React.FC<React.PropsWithChildren<RadioGroupProps>> = 
   initialValue,
   useRow,
   ...props
-}: React.PropsWithChildren<RadioGroupProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<RadioGroupProps>) => {
   const { SCALES } = useScale()
   const [selfVal, setSelfVal] = useState<string | number | undefined>(initialValue)
   const updateState = (nextValue: string | number) => {

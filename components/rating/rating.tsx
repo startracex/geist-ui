@@ -57,7 +57,7 @@ const RatingComponent: React.FC<RatingProps> = ({
   locked,
   onLockedChange,
   ...props
-}: React.PropsWithChildren<RatingProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<RatingProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const color = useMemo(() => getColor(type, theme.palette), [type, theme.palette])

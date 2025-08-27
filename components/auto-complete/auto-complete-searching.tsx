@@ -17,7 +17,7 @@ const AutoCompleteSearchComponent: React.FC<
 > = ({
   children,
   className,
-}: React.PropsWithChildren<AutoCompleteSearchProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<AutoCompleteSearchProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

@@ -103,7 +103,7 @@ const AutoCompleteComponent = React.forwardRef<
       disableFreeSolo,
       getPopupContainer,
       ...props
-    }: React.PropsWithChildren<AutoCompleteProps> & typeof defaultProps,
+    }: React.PropsWithChildren<AutoCompleteProps>,
     userRef: React.Ref<HTMLInputElement | null>,
   ) => {
     const resetTimer = useRef<number>()

@@ -29,7 +29,7 @@ const KeyboardComponent: React.FC<React.PropsWithChildren<KeyboardProps>> = ({
   children,
   className,
   ...props
-}: React.PropsWithChildren<KeyboardProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<KeyboardProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

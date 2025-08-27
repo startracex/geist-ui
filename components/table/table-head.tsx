@@ -38,7 +38,7 @@ const TableHead = <TableDataItem extends TableDataItemBase>(
   props: TableHeadProps<TableDataItem>,
 ) => {
   const theme = useTheme()
-  const { columns, width } = props as TableHeadProps<TableDataItem> & typeof defaultProps
+  const { columns, width } = props as TableHeadProps<TableDataItem>
   const isScalableWidth = useMemo(() => columns.find(item => !!item.width), [columns])
   const colgroup = useMemo(() => {
     if (!isScalableWidth) return <colgroup />

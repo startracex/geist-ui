@@ -53,7 +53,7 @@ export const NoteComponent: React.FC<React.PropsWithChildren<NoteProps>> = ({
   filled,
   className,
   ...props
-}: React.PropsWithChildren<NoteProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<NoteProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { color, borderColor, bgColor } = useMemo(

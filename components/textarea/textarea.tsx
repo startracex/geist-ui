@@ -52,7 +52,7 @@ const TextareaComponent = React.forwardRef<
       placeholder,
       resize,
       ...props
-    }: React.PropsWithChildren<TextareaProps> & typeof defaultProps,
+    }: React.PropsWithChildren<TextareaProps>,
     ref: React.Ref<HTMLTextAreaElement | null>,
   ) => {
     const theme = useTheme()

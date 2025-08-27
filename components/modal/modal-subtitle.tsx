@@ -17,7 +17,7 @@ const ModalSubtitleComponent: React.FC<React.PropsWithChildren<ModalSubtitleProp
   className,
   children,
   ...props
-}: React.PropsWithChildren<ModalSubtitleProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<ModalSubtitleProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

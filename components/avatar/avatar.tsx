@@ -36,7 +36,7 @@ const AvatarComponent: React.FC<AvatarProps> = ({
   isSquare,
   className,
   ...props
-}: AvatarProps & typeof defaultProps) => {
+}: AvatarProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const showText = !src

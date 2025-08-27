@@ -20,7 +20,7 @@ const PageHeaderComponent: React.FC<React.PropsWithChildren<PageHeaderProps>> = 
   center,
   className,
   ...props
-}: React.PropsWithChildren<PageHeaderProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<PageHeaderProps>) => {
   const { SCALES } = useScale()
   const classes = useClasses({ center }, className)
 

@@ -46,7 +46,7 @@ const ModalComponent: React.FC<React.PropsWithChildren<ModalProps>> = ({
   positionClassName,
   backdropClassName,
   layerClassName,
-}: React.PropsWithChildren<ModalProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<ModalProps>) => {
   const portal = usePortal('modal')
   const { SCALES } = useScale()
   const [, setBodyHidden] = useBodyScroll(null, { delayReset: 300 })

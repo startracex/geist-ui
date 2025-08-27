@@ -24,7 +24,7 @@ const Col: React.FC<React.PropsWithChildren<ColProps>> = ({
   offset,
   className,
   ...props
-}: React.PropsWithChildren<ColProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<ColProps>) => {
   const Component = component
 
   return (

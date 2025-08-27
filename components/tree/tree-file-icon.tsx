@@ -16,7 +16,7 @@ const TreeFileIcon: React.FC<TreeFileIconProps> = ({
   color,
   width,
   height,
-}: TreeFileIconProps & typeof defaultProps) => {
+}: TreeFileIconProps) => {
   const theme = useTheme()
   return (
     <svg

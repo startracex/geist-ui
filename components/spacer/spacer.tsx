@@ -18,7 +18,7 @@ const SpacerComponent: React.FC<SpacerProps> = ({
   inline,
   className,
   ...props
-}: SpacerProps & typeof defaultProps) => {
+}: SpacerProps) => {
   const { SCALES } = useScale()
 
   return (

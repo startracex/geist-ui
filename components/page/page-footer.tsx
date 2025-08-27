@@ -15,7 +15,7 @@ export type PageFooterProps = Props & NativeAttrs
 const PageFooterComponent: React.FC<React.PropsWithChildren<PageFooterProps>> = ({
   children,
   ...props
-}: React.PropsWithChildren<PageFooterProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<PageFooterProps>) => {
   const { SCALES } = useScale()
 
   return (

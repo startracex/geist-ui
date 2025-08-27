@@ -34,7 +34,7 @@ const CapacityComponent: React.FC<CapacityProps> = ({
   color: userColor,
   className,
   ...props
-}: CapacityProps & typeof defaultProps) => {
+}: CapacityProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const percentValue = useProportions(value, limit)

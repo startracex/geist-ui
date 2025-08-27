@@ -17,7 +17,7 @@ const FieldsetFooterComponent: React.FC<React.PropsWithChildren<FieldsetFooterPr
   className,
   children,
   ...props
-}: React.PropsWithChildren<FieldsetFooterProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<FieldsetFooterProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

@@ -29,7 +29,7 @@ const AutoCompleteDropdown: React.FC<
   dropdownStyle,
   disableMatchWidth,
   getPopupContainer,
-}: React.PropsWithChildren<AutoCompleteDropdownProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<AutoCompleteDropdownProps>) => {
   const theme = useTheme()
   const { ref } = useAutoCompleteContext()
   const isEmpty = useMemo(() => {

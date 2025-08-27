@@ -65,7 +65,7 @@ const PageComponent: React.FC<React.PropsWithChildren<PageProps>> = ({
   dotSize,
   dotSpace,
   ...props
-}: React.PropsWithChildren<PageProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<PageProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const showDot = useMemo<boolean>(() => {

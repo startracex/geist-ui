@@ -48,7 +48,7 @@ const Container: React.FC<React.PropsWithChildren<RowProps>> = ({
   align,
   className,
   ...props
-}: React.PropsWithChildren<RowProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<RowProps>) => {
   const Component = component
   const theme = useTheme()
   const { justifyValue, alignValue } = useMemo(

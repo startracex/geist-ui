@@ -106,7 +106,7 @@ const getSpans = (theme: GeistUIThemes) => {
 const SpinnerComponent: React.FC<SpinnerProps> = ({
   className,
   ...props
-}: SpinnerProps & typeof defaultProps) => {
+}: SpinnerProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const classes = useClasses('spinner', className)

@@ -24,7 +24,7 @@ const DisplayComponent: React.FC<React.PropsWithChildren<DisplayProps>> = ({
   shadow,
   className,
   ...props
-}: React.PropsWithChildren<DisplayProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<DisplayProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const classes = useClasses('display', className)

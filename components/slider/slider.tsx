@@ -83,7 +83,7 @@ const SliderComponent: React.FC<React.PropsWithChildren<SliderProps>> = ({
   className,
   showMarkers,
   ...props
-}: React.PropsWithChildren<SliderProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<SliderProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const [value, setValue] = useState<number>(initialValue)

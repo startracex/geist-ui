@@ -62,7 +62,7 @@ const getTransform = (placement: BadgeAnchorPlacement): TransformStyles => {
 const BadgeAnchor: React.FC<React.PropsWithChildren<BadgeAnchorProps>> = ({
   children,
   placement,
-}: BadgeAnchorProps & typeof defaultProps) => {
+}: BadgeAnchorProps) => {
   const [withoutBadgeChildren, badgeChldren] = pickChild(children, Badge)
   const { top, bottom, left, right, value, origin } = useMemo(
     () => getTransform(placement),

@@ -38,7 +38,7 @@ const FieldsetComponent: React.FC<React.PropsWithChildren<FieldsetProps>> = ({
   value,
   label,
   ...props
-}: React.PropsWithChildren<FieldsetProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<FieldsetProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { inGroup, currentValue, register } = useFieldset()

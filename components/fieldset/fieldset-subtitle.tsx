@@ -15,7 +15,7 @@ const FieldsetSubtitle: React.FC<React.PropsWithChildren<FieldsetSubtitleProps>>
   className,
   children,
   ...props
-}: React.PropsWithChildren<FieldsetSubtitleProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<FieldsetSubtitleProps>) => {
   return (
     <>
       <div className={className} {...props}>

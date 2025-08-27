@@ -36,7 +36,7 @@ const TextChild: React.FC<React.PropsWithChildren<TextChildProps>> = ({
   className,
   type,
   ...props
-}: React.PropsWithChildren<TextChildProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TextChildProps>) => {
   const Component = tag
   const theme = useTheme()
   const { SCALES, getScaleProps } = useScale()

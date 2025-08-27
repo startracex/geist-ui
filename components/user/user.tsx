@@ -27,7 +27,7 @@ const UserComponent: React.FC<React.PropsWithChildren<UserProps>> = ({
   className,
   altText,
   ...props
-}: React.PropsWithChildren<UserProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<UserProps>) => {
   const theme = useTheme()
   const { SCALES, getScaleProps } = useScale()
   const scale = getScaleProps('scale') as number | undefined

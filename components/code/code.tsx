@@ -27,7 +27,7 @@ const CodeComponent: React.FC<React.PropsWithChildren<CodeProps>> = ({
   name,
   classic,
   ...props
-}: React.PropsWithChildren<CodeProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<CodeProps>) => {
   const { SCALES } = useScale()
   const theme = useTheme()
   const { background, border } = useMemo(() => {

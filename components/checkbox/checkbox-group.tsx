@@ -26,7 +26,7 @@ const CheckboxGroupComponent: React.FC<React.PropsWithChildren<CheckboxGroupProp
   children,
   className,
   ...props
-}: CheckboxGroupProps & typeof defaultProps) => {
+}: CheckboxGroupProps) => {
   const { SCALES } = useScale()
   const [selfVal, setSelfVal] = useState<string[]>([])
   const classes = useClasses('group', className)

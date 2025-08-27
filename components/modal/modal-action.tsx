@@ -37,7 +37,7 @@ const ModalActionComponent = React.forwardRef<
       passive,
       disabled,
       ...props
-    }: React.PropsWithChildren<ModalActionProps> & typeof defaultProps,
+    }: React.PropsWithChildren<ModalActionProps>,
     ref: React.Ref<HTMLButtonElement | null>,
   ) => {
     const theme = useTheme()

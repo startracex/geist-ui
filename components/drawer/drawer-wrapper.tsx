@@ -25,7 +25,7 @@ const DrawerWrapper: React.FC<React.PropsWithChildren<DrawerWrapperProps>> = ({
   visible,
   placement,
   ...props
-}: React.PropsWithChildren<DrawerWrapperProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<DrawerWrapperProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const modalContent = useRef<HTMLDivElement>(null)

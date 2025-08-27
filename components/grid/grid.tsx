@@ -18,7 +18,7 @@ const GridComponent: React.FC<React.PropsWithChildren<GridProps>> = ({
   children,
   className,
   ...props
-}: React.PropsWithChildren<GridProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<GridProps>) => {
   const { SCALES } = useScale()
   const { className: resolveClassName, styles } = css.resolve`
     div {

@@ -19,7 +19,7 @@ const ButtonDrip: React.FC<ButtonDrip> = ({
   y,
   color,
   onCompleted,
-}: ButtonDrip & typeof defaultProps) => {
+}: ButtonDrip) => {
   const dripRef = useRef<HTMLDivElement>(null)
   /* istanbul ignore next */
   const top = Number.isNaN(+y) ? 0 : y - 10

@@ -77,7 +77,7 @@ const TagComponent: React.FC<React.PropsWithChildren<TagProps>> = ({
   className,
   invert,
   ...props
-}: React.PropsWithChildren<TagProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TagProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { color, bgColor, borderColor } = useMemo(

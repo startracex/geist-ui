@@ -19,7 +19,7 @@ const RadioDescriptionComponent: React.FC<
   className,
   children,
   ...props
-}: React.PropsWithChildren<RadioDescriptionProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<RadioDescriptionProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

@@ -50,7 +50,7 @@ const CheckboxComponent: React.FC<CheckboxProps> = ({
   type,
   value,
   ...props
-}: CheckboxProps & typeof defaultProps) => {
+}: CheckboxProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const [selfChecked, setSelfChecked] = useState<boolean>(initialChecked)

@@ -37,7 +37,7 @@ const DrawerComponent: React.FC<React.PropsWithChildren<DrawerProps>> = ({
   wrapClassName,
   children,
   ...props
-}: React.PropsWithChildren<DrawerProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<DrawerProps>) => {
   const portal = usePortal('drawer')
   const [visible, setVisible] = useState<boolean>(false)
   const [, setBodyHidden] = useBodyScroll(null, { delayReset: 300 })

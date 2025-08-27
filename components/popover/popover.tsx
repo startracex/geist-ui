@@ -54,7 +54,7 @@ const PopoverComponent: React.FC<React.PropsWithChildren<PopoverProps>> = ({
   onVisibleChange,
   visible: customVisible,
   ...props
-}: React.PropsWithChildren<PopoverProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<PopoverProps>) => {
   const { SCALES } = useScale()
   const [visible, setVisible] = useState<boolean>(initialVisible)
   const textNode = useMemo(() => getReactNode(content), [content])

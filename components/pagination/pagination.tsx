@@ -39,7 +39,7 @@ const PaginationComponent: React.FC<React.PropsWithChildren<PaginationProps>> = 
   onChange,
   className,
   ...props
-}: React.PropsWithChildren<PaginationProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<PaginationProps>) => {
   const { SCALES } = useScale()
   const [page, setPage, pageRef] = useCurrentState(initialPage)
   const [, prevChildren] = pickChild(children, PaginationPrevious)

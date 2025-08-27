@@ -19,7 +19,7 @@ const FieldsetContentComponent: React.FC<
   className,
   children,
   ...props
-}: React.PropsWithChildren<FieldsetContentProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<FieldsetContentProps>) => {
   const { SCALES } = useScale()
   const classes = useClasses('content', className)
 

@@ -67,7 +67,7 @@ const Tree: React.FC<React.PropsWithChildren<TreeProps>> = ({
   value,
   className,
   ...props
-}: React.PropsWithChildren<TreeProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TreeProps>) => {
   const isImperative = Boolean(value && value.length > 0)
   const onFileClick = (path: string) => {
     onClick && onClick(path)

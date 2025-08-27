@@ -74,7 +74,7 @@ const GridBasicItem: React.FC<React.PropsWithChildren<GridBasicItemProps>> = ({
   children,
   className,
   ...props
-}: React.PropsWithChildren<GridBasicItemProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<GridBasicItemProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const classes = useMemo(() => {

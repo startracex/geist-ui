@@ -22,7 +22,7 @@ const ModalWrapper: React.FC<React.PropsWithChildren<ModalWrapperProps>> = ({
   children,
   visible,
   ...props
-}: React.PropsWithChildren<ModalWrapperProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<ModalWrapperProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const modalContent = useRef<HTMLDivElement>(null)

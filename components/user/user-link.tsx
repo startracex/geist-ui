@@ -23,7 +23,7 @@ const UserLink = React.forwardRef<
       className,
       children,
       ...props
-    }: React.PropsWithChildren<UserLinkProps> & typeof defaultProps,
+    }: React.PropsWithChildren<UserLinkProps>,
     ref: React.Ref<HTMLAnchorElement>,
   ) => {
     return (

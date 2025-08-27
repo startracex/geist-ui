@@ -17,7 +17,7 @@ const ModalContentComponent: React.FC<React.PropsWithChildren<ModalContentProps>
   className,
   children,
   ...props
-}: React.PropsWithChildren<ModalContentProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<ModalContentProps>) => {
   const { SCALES } = useScale()
 
   return (

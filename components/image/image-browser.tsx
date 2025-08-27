@@ -110,7 +110,7 @@ const ImageBrowserComponent = React.forwardRef<
       anchorProps,
       className,
       ...props
-    }: React.PropsWithChildren<ImageBrowserProps> & typeof defaultProps,
+    }: React.PropsWithChildren<ImageBrowserProps>,
     ref: React.Ref<HTMLDivElement>,
   ) => {
     const theme = useTheme()

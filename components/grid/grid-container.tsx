@@ -25,7 +25,7 @@ const GridContainerComponent: React.FC<React.PropsWithChildren<GridContainerProp
   children,
   className,
   ...props
-}: React.PropsWithChildren<GridContainerProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<GridContainerProps>) => {
   const { unit, SCALES } = useScale()
   const gapUnit = useMemo(() => `calc(${gap} * ${unit} * 1/3)`, [gap, unit])
   const { className: resolveClassName, styles } = css.resolve`

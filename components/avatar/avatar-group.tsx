@@ -19,7 +19,7 @@ const AvatarGroupComponent: React.FC<React.PropsWithChildren<AvatarGroupProps>> 
   count,
   className,
   children,
-}: AvatarGroupProps & typeof defaultProps) => {
+}: AvatarGroupProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

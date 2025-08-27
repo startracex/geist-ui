@@ -16,7 +16,7 @@ const PageContentComponent: React.FC<React.PropsWithChildren<PageContentProps>> 
   className,
   children,
   ...props
-}: React.PropsWithChildren<PageContentProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<PageContentProps>) => {
   const { SCALES } = useScale()
 
   return (

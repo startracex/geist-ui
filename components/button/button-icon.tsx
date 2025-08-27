@@ -21,7 +21,7 @@ const ButtonIcon: React.FC<React.PropsWithChildren<ButtonIconProps>> = ({
   children,
   className,
   ...props
-}: ButtonIconProps & typeof defaultProps) => {
+}: ButtonIconProps) => {
   const classes = useClasses('icon', { right: isRight, single: isSingle }, className)
 
   return (

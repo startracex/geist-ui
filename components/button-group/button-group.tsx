@@ -27,7 +27,7 @@ export type ButtonGroupProps = Props & NativeAttrs
 
 const getGroupBorderColors = (
   palette: GeistUIThemesPalette,
-  props: ButtonGroupProps & typeof defaultProps,
+  props: ButtonGroupProps,
 ): string => {
   const { ghost, type } = props
   if (!ghost && type !== 'default') return palette.background
@@ -43,7 +43,7 @@ const getGroupBorderColors = (
 }
 
 const ButtonGroupComponent: React.FC<React.PropsWithChildren<ButtonGroupProps>> = (
-  groupProps: ButtonGroupProps & typeof defaultProps,
+  groupProps: ButtonGroupProps,
 ) => {
   const theme = useTheme()
   const { SCALES } = useScale()

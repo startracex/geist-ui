@@ -29,7 +29,7 @@ const CssTransition: React.FC<React.PropsWithChildren<CssTransitionProps>> = ({
   clearTime,
   name,
   ...props
-}: React.PropsWithChildren<CssTransitionProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<CssTransitionProps>) => {
   const [classes, setClasses] = useState<string>('')
   const [renderable, setRenderable] = useState<boolean>(visible)
 

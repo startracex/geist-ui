@@ -61,7 +61,7 @@ const TabsComponent: React.FC<React.PropsWithChildren<TabsProps>> = ({
   activeStyle,
   align,
   ...props
-}: React.PropsWithChildren<TabsProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TabsProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const [tabs, setTabs] = useState<Array<TabsHeaderItem>>([])

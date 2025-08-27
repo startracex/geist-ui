@@ -17,7 +17,7 @@ const CardContentComponent: React.FC<React.PropsWithChildren<CardContentProps>> 
   className,
   children,
   ...props
-}: CardContentProps & typeof defaultProps) => {
+}: CardContentProps) => {
   const { SCALES } = useScale()
 
   return (

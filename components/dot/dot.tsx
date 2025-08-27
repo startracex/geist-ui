@@ -34,7 +34,7 @@ const DotComponent: React.FC<React.PropsWithChildren<DotProps>> = ({
   children,
   className,
   ...props
-}: React.PropsWithChildren<DotProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<DotProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const color = useMemo(() => getColor(type, theme), [type, theme])

@@ -22,7 +22,7 @@ const AutoCompleteItemComponent: React.FC<
   value: identValue,
   children,
   isLabelOnly,
-}: React.PropsWithChildren<AutoCompleteItemProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<AutoCompleteItemProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { value, updateValue, updateVisible } = useAutoCompleteContext()

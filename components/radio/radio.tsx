@@ -47,7 +47,7 @@ const RadioComponent: React.FC<React.PropsWithChildren<RadioProps>> = ({
   value: radioValue,
   children,
   ...props
-}: React.PropsWithChildren<RadioProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<RadioProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const [selfChecked, setSelfChecked] = useState<boolean>(!!checked)

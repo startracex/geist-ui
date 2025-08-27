@@ -22,7 +22,7 @@ const TabsItemComponent: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
   value,
   label,
   disabled,
-}: React.PropsWithChildren<TabsItemProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TabsItemProps>) => {
   const { SCALES } = useScale()
   const { register, currentValue } = useTabsContext()
   const isActive = useMemo(() => currentValue === value, [currentValue, value])

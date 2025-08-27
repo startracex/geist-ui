@@ -37,7 +37,7 @@ const Backdrop: React.FC<React.PropsWithChildren<BackdropProps>> = React.memo(
     positionClassName,
     layerClassName,
     ...props
-  }: React.PropsWithChildren<BackdropProps> & typeof defaultProps) => {
+  }: React.PropsWithChildren<BackdropProps>) => {
     const theme = useTheme()
     const [, setIsContentMouseDown, IsContentMouseDownRef] = useCurrentState(false)
     const clickHandler = (event: MouseEvent<HTMLElement>) => {

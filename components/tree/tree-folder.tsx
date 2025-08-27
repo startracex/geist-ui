@@ -35,7 +35,7 @@ const TreeFolder: React.FC<React.PropsWithChildren<TreeFolderProps>> = ({
   extra,
   className,
   ...props
-}: React.PropsWithChildren<TreeFolderProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TreeFolderProps>) => {
   const theme = useTheme()
   const { initialExpand, isImperative } = useTreeContext()
   const [expanded, setExpanded] = useState<boolean>(initialExpand)

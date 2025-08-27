@@ -51,7 +51,7 @@ const SnippetComponent: React.FC<React.PropsWithChildren<SnippetProps>> = ({
   copy: copyType,
   className,
   ...props
-}: React.PropsWithChildren<SnippetProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<SnippetProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { copy } = useClipboard()

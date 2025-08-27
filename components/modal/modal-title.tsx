@@ -17,7 +17,7 @@ const ModalTitleComponent: React.FC<React.PropsWithChildren<ModalTitleProps>> = 
   className,
   children,
   ...props
-}: React.PropsWithChildren<ModalTitleProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<ModalTitleProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

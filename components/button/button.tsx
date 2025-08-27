@@ -49,7 +49,7 @@ const ButtonComponent = React.forwardRef<
   React.PropsWithChildren<ButtonProps>
 >(
   (
-    btnProps: ButtonProps & typeof defaultProps,
+    btnProps: ButtonProps,
     ref: React.Ref<HTMLButtonElement | null>,
   ) => {
     const theme = useTheme()

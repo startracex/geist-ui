@@ -33,7 +33,7 @@ const CardComponent: React.FC<React.PropsWithChildren<CardProps>> = ({
   shadow,
   type,
   ...props
-}: CardProps & typeof defaultProps) => {
+}: CardProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const hoverShadow = useMemo(() => {

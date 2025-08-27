@@ -35,7 +35,7 @@ const CollapseComponent: React.FC<React.PropsWithChildren<CollapseProps>> = ({
   className,
   index,
   ...props
-}: React.PropsWithChildren<CollapseProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<CollapseProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { values, updateValues } = useCollapseContext()

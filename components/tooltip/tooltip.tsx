@@ -59,7 +59,7 @@ const TooltipComponent: React.FC<React.PropsWithChildren<TooltipProps>> = ({
   hideArrow,
   visible: customVisible,
   ...props
-}: React.PropsWithChildren<TooltipProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TooltipProps>) => {
   const timer = useRef<number>()
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState<boolean>(initialVisible)

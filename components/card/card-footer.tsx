@@ -21,7 +21,7 @@ const CardFooterComponent: React.FC<React.PropsWithChildren<CardFooterProps>> = 
   className,
   disableAutoMargin,
   ...props
-}: CardFooterProps & typeof defaultProps) => {
+}: CardFooterProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const classes = useClasses({ 'auto-margin': !disableAutoMargin }, className)

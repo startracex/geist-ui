@@ -29,7 +29,7 @@ const PopoverItemComponent: React.FC<React.PropsWithChildren<PopoverItemProps>> 
   onClick,
   disableAutoClose,
   ...props
-}: React.PropsWithChildren<PopoverItemProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<PopoverItemProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { disableItemsAutoClose, onItemClick } = usePopoverContext()

@@ -82,7 +82,7 @@ const SelectComponent = React.forwardRef<SelectRef, React.PropsWithChildren<Sele
       getPopupContainer,
       onDropdownVisibleChange,
       ...props
-    }: React.PropsWithChildren<SelectProps> & typeof defaultProps,
+    }: React.PropsWithChildren<SelectProps>,
     selectRef,
   ) => {
     const theme = useTheme()

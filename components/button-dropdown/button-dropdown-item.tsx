@@ -31,7 +31,7 @@ const ButtonDropdownItem: React.FC<React.PropsWithChildren<ButtonDropdownItemPro
   main,
   type: selfType,
   ...props
-}: ButtonDropdownItemProps & typeof defaultProps) => {
+}: ButtonDropdownItemProps) => {
   const theme = useTheme()
   const { type: parentType, disabled, loading } = useButtonDropdown()
   const type = main ? parentType : selfType

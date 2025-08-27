@@ -51,7 +51,7 @@ const InputComponent = React.forwardRef<
       children,
       disabled,
       ...props
-    }: React.PropsWithChildren<InputProps> & typeof defaultProps,
+    }: React.PropsWithChildren<InputProps>,
     ref: React.Ref<HTMLInputElement | null>,
   ) => {
     const theme = useTheme()

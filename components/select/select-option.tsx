@@ -35,7 +35,7 @@ const SelectOptionComponent: React.FC<React.PropsWithChildren<SelectOptionProps>
   label,
   preventAllEvents,
   ...props
-}: React.PropsWithChildren<SelectOptionProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<SelectOptionProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const { updateValue, value, disableAll } = useSelectContext()

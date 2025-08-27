@@ -25,7 +25,7 @@ const FieldsetGroupComponent: React.FC<React.PropsWithChildren<FieldsetGroupProp
   value,
   onChange,
   ...props
-}: React.PropsWithChildren<FieldsetGroupProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<FieldsetGroupProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const [selfVal, setSelfVal] = useState<string>(value)

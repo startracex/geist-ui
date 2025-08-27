@@ -24,7 +24,7 @@ const CollapseGroupComponent: React.FC<React.PropsWithChildren<CollapseGroupProp
   accordion,
   className,
   ...props
-}: React.PropsWithChildren<CollapseGroupProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<CollapseGroupProps>) => {
   const { SCALES } = useScale()
   const [state, setState, stateRef] = useCurrentState<Array<number>>([])
   const classes = useClasses('collapse-group', className)

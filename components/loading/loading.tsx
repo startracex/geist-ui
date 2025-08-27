@@ -45,7 +45,7 @@ const LoadingComponent: React.FC<React.PropsWithChildren<LoadingProps>> = ({
   className,
   spaceRatio,
   ...props
-}: React.PropsWithChildren<LoadingProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<LoadingProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const classes = useClasses('loading-container', className)

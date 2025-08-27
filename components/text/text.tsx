@@ -73,7 +73,7 @@ const TextComponent: React.FC<React.PropsWithChildren<TextProps>> = ({
   children,
   className,
   ...props
-}: React.PropsWithChildren<TextProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TextProps>) => {
   const elements: ElementMap = { h1, h2, h3, h4, h5, h6, p, blockquote }
   const inlineElements: ElementMap = { span, small, b, em, i, del }
   const names = Object.keys(elements).filter(

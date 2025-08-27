@@ -40,7 +40,7 @@ const LinkComponent = React.forwardRef<
       block,
       icon,
       ...props
-    }: React.PropsWithChildren<LinkProps> & typeof defaultProps,
+    }: React.PropsWithChildren<LinkProps>,
     ref: React.Ref<HTMLAnchorElement>,
   ) => {
     const theme = useTheme()

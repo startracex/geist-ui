@@ -30,7 +30,7 @@ const TreeFile: React.FC<React.PropsWithChildren<TreeFileProps>> = ({
   extra,
   className,
   ...props
-}: React.PropsWithChildren<TreeFileProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<TreeFileProps>) => {
   const theme = useTheme()
   const { onFileClick } = useTreeContext()
   const currentPath = useMemo(() => makeChildPath(name, parentPath), [])

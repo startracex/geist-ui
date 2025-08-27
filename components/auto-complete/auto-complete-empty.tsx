@@ -17,7 +17,7 @@ const AutoCompleteEmpty: React.FC<React.PropsWithChildren<AutoCompleteEmptyProps
   children,
   hidden,
   className,
-}: React.PropsWithChildren<AutoCompleteEmptyProps> & typeof defaultProps) => {
+}: React.PropsWithChildren<AutoCompleteEmptyProps>) => {
   if (hidden) return null
   return <AutoCompleteSearch className={className}>{children}</AutoCompleteSearch>
 }

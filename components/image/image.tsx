@@ -27,7 +27,7 @@ const ImageComponent: React.FC<ImageProps> = ({
   className,
   maxDelay,
   ...props
-}: ImageProps & typeof defaultProps) => {
+}: ImageProps) => {
   const { SCALES, getScaleProps } = useScale()
   const width = getScaleProps(['width', 'w'])
   const height = getScaleProps(['height', 'h'])

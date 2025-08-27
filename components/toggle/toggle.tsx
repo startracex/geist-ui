@@ -48,7 +48,7 @@ const ToggleComponent: React.FC<ToggleProps> = ({
   type,
   className,
   ...props
-}: ToggleProps & typeof defaultProps) => {
+}: ToggleProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const [selfChecked, setSelfChecked] = useState<boolean>(initialChecked)

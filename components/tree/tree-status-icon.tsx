@@ -19,7 +19,7 @@ const TreeStatusIcon: React.FC<TreeStatusIconProps> = ({
   width,
   height,
   active,
-}: TreeStatusIconProps & typeof defaultProps) => {
+}: TreeStatusIconProps) => {
   const theme = useTheme()
   return (
     <svg

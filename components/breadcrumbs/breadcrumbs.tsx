@@ -21,7 +21,7 @@ const BreadcrumbsComponent: React.FC<React.PropsWithChildren<BreadcrumbsProps>> 
   separator,
   children,
   className,
-}: BreadcrumbsProps & typeof defaultProps) => {
+}: BreadcrumbsProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const hoverColor = useMemo(() => {

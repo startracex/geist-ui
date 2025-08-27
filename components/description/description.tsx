@@ -23,7 +23,7 @@ const DescriptionComponent: React.FC<DescriptionProps> = ({
   content,
   className,
   ...props
-}: DescriptionProps & typeof defaultProps) => {
+}: DescriptionProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const classes = useClasses('description', className)

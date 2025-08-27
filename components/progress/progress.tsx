@@ -63,7 +63,7 @@ const ProgressComponent: React.FC<ProgressProps> = ({
   fixedTop,
   fixedBottom,
   ...props
-}: ProgressProps & typeof defaultProps) => {
+}: ProgressProps) => {
   const theme = useTheme()
   const { SCALES } = useScale()
   const percentValue = useProportions(value, max)

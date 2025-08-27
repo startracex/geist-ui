@@ -34,7 +34,7 @@ const TableBody = <TableDataItem extends TableDataItemBase>({
   onRow,
   onCell,
   rowClassName,
-}: TableBodyProps<TableDataItem> & typeof defaultProps) => {
+}: TableBodyProps<TableDataItem>) => {
   const theme = useTheme()
   const { columns } = useTableContext<TableDataItem>()
   const rowClickHandler = (row: TableDataItem, index: number) => {
