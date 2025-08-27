@@ -108,7 +108,7 @@ const RadioComponent: React.FC<React.PropsWithChildren<RadioProps>> = ({
           <span className={useClasses('point', { active: selfChecked })} />
           {withoutDescChildren}
         </span>
-        {DescChildren && DescChildren}
+        {DescChildren}
       </label>
       <style jsx>{`
         input {

@@ -85,7 +85,7 @@ const FieldsetComponent: React.FC<React.PropsWithChildren<FieldsetProps>> = ({
   return (
     <div className={classes} {...props}>
       {hasContent ? content : <FieldsetContent>{content}</FieldsetContent>}
-      {FooterChildren && FooterChildren}
+      {FooterChildren}
       <style jsx>{`
         .fieldset {
           background-color: ${theme.palette.background};

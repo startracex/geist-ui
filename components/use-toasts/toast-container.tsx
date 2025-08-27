@@ -51,10 +51,13 @@ const ToastContainer: React.FC<React.PropsWithChildren<unknown>> = () => {
         return {
           ...toast,
           _timeout: (() => {
-            const timer = window.setTimeout(() => {
-              toast.cancel()
-              window.clearTimeout(timer)
-            }, toast.delay + index * 100)
+            const timer = window.setTimeout(
+              () => {
+                toast.cancel()
+                window.clearTimeout(timer)
+              },
+              toast.delay + index * 100,
+            )
             return timer
           })(),
         }

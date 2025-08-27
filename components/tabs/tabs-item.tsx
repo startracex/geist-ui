@@ -98,7 +98,9 @@ const TabsItemComponent: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
             border-radius: 4px;
             transform: scaleX(0.75);
             background-color: ${theme.palette.foreground};
-            transition: opacity, transform 200ms ease-in;
+            transition:
+              opacity,
+              transform 200ms ease-in;
             opacity: 0;
           }
           .active:after {
@@ -143,7 +145,6 @@ const TabsItemComponent: React.FC<React.PropsWithChildren<TabsItemProps>> = ({
     register && register({ value, cell: TabsInternalCell })
   }, [value, label, disabled])
 
-  /* eslint-disable react/jsx-no-useless-fragment */
   return isActive ? <>{children}</> : null
 }
 
@@ -151,4 +152,3 @@ TabsItemComponent.defaultProps = defaultProps
 TabsItemComponent.displayName = 'GeistTabsItem'
 const TabsItem = withScale(TabsItemComponent)
 export default TabsItem
-/* eslint-enable */

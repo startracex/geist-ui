@@ -25,7 +25,7 @@ describe('Dropdown', () => {
         bottom: 100,
         height: 100,
         x: 0,
-      } as DOMRect)
+      }) as DOMRect
   })
 
   it('should render correctly', async () => {

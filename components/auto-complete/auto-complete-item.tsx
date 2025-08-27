@@ -50,7 +50,9 @@ const AutoCompleteItemComponent: React.FC<
           user-select: none;
           border: 0;
           cursor: pointer;
-          transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+          transition:
+            background 0.2s ease 0s,
+            border-color 0.2s ease 0s;
           font-size: ${SCALES.font(0.875)};
           width: ${SCALES.width(1, 'auto')};
           height: ${isLabelOnly ? SCALES.height(2.5) : SCALES.height(1, 'auto')};

@@ -11,7 +11,7 @@ const FileTreeValueType = tuple('directory', 'file')
 const directoryType = FileTreeValueType[0]
 
 export type TreeFile = {
-  type: typeof FileTreeValueType[number]
+  type: (typeof FileTreeValueType)[number]
   name: string
   extra?: string
   files?: Array<TreeFile>

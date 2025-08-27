@@ -94,7 +94,9 @@ const SelectOptionComponent: React.FC<React.PropsWithChildren<SelectOptionProps>
           user-select: none;
           border: 0;
           cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
-          transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+          transition:
+            background 0.2s ease 0s,
+            border-color 0.2s ease 0s;
           --select-font-size: ${SCALES.font(0.75)};
           font-size: var(--select-font-size);
           width: ${SCALES.width(1, '100%')};

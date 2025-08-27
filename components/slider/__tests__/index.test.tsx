@@ -11,7 +11,7 @@ const triggerDrag = (el: HTMLElement, x = 0) => {
       left: 0,
       right: 100,
       x: 0,
-    } as DOMRect)
+    }) as DOMRect
   const mousedown = new MouseEvent('mousedown')
   const mousemove = new MouseEvent('mousemove', {
     clientX: x,
@@ -34,7 +34,7 @@ describe('Slider', () => {
         bottom: 10,
         left: 0,
         right: 100,
-      } as DOMRect)
+      }) as DOMRect
   })
 
   it('should render correctly', () => {

@@ -38,7 +38,7 @@ const useBodyScroll = (
   const [hidden, setHidden] = useState<boolean>(false)
   const safeOptions = {
     ...defaultOptions,
-    ...(options || {}),
+    ...options,
   }
 
   useEffect(() => {

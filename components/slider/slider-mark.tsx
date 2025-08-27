@@ -17,7 +17,9 @@ const getMarks = (min: number, max: number, step: number): Marks => {
   const count = roundFunc(value / step) - 1
   if (count >= 99) return []
 
-  return [...new Array(count)].map((_, index) => (step * (index + 1) * 100) / value)
+  return Array.from({ length: count }).map(
+    (_, index) => (step * (index + 1) * 100) / value,
+  )
 }
 
 const SliderMark: React.FC<React.PropsWithChildren<Props>> = ({ step, max, min }) => {

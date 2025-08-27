@@ -186,7 +186,9 @@ const InputComponent = React.forwardRef<
             user-select: none;
             border-radius: ${theme.layout.radius};
             border: 1px solid ${borderColor};
-            transition: border 0.2s ease 0s, color 0.2s ease 0s;
+            transition:
+              border 0.2s ease 0s,
+              color 0.2s ease 0s;
           }
 
           .input-wrapper.left-label {

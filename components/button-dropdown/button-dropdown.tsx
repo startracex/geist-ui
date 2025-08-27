@@ -161,7 +161,9 @@ const ButtonDropdownComponent: React.FC<React.PropsWithChildren<ButtonDropdownPr
             align-items: center;
             width: auto;
             padding: 0 1px;
-            transition: background 0.2s ease 0s, border-color 0.2s ease 0s;
+            transition:
+              background 0.2s ease 0s,
+              border-color 0.2s ease 0s;
           }
 
           summary:hover {

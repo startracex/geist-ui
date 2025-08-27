@@ -23,7 +23,7 @@ const PaginationPages: React.FC<Props> = ({ limit, count, current, setPage }) =>
       showEllipsis && current < count - middleNumber,
     ]
   }, [current, showPages, middleNumber, count, limit])
-  const pagesArray = useMemo(() => [...new Array(showPages)], [showPages])
+  const pagesArray = useMemo(() => Array.from({ length: showPages }), [showPages])
 
   const renderItem = useCallback(
     (value: number, active: number) => (
@@ -57,10 +57,9 @@ const PaginationPages: React.FC<Props> = ({ limit, count, current, setPage }) =>
     return renderItem(value, current)
   })
   if (count <= limit) {
-    /* eslint-disable react/jsx-no-useless-fragment */
     return (
       <>
-        {[...new Array(count)].map((_, index) => {
+        {Array.from({ length: count }).map((_, index) => {
           const value = index + 1
           return (
             <PaginationItem
@@ -73,7 +72,6 @@ const PaginationPages: React.FC<Props> = ({ limit, count, current, setPage }) =>
         })}
       </>
     )
-    /* eslint-enable */
   }
   return (
     <>
@@ -88,8 +86,8 @@ const PaginationPages: React.FC<Props> = ({ limit, count, current, setPage }) =>
       {showBeforeEllipsis && showAfterEllipsis
         ? middlePages
         : showBeforeEllipsis
-        ? endPages
-        : startPages}
+          ? endPages
+          : startPages}
       {showAfterEllipsis && (
         <PaginationEllipsis
           key="pagination-ellipsis-after"

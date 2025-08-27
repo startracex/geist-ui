@@ -16,7 +16,7 @@ type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
 export type SpinnerProps = Props & NativeAttrs
 
 const getSpans = (theme: GeistUIThemes) => {
-  return [...new Array(12)].map((_, index) => (
+  return Array.from({ length: 12 }).map((_, index) => (
     <span key={`spinner-${index}`}>
       <style jsx>{`
         span {

@@ -62,7 +62,6 @@ const ButtonComponent = React.forwardRef<
     const [dripY, setDripY] = useState<number>(0)
     const groupConfig = useButtonGroupContext()
     const filteredProps = filterPropsWithGroup(btnProps, groupConfig)
-    /* eslint-disable @typescript-eslint/no-unused-vars */
     const {
       children,
       disabled,
@@ -79,7 +78,6 @@ const ButtonComponent = React.forwardRef<
       className,
       ...props
     } = filteredProps
-    /* eslint-enable @typescript-eslint/no-unused-vars */
 
     const { bg, border, color } = useMemo(
       () => getButtonColors(theme.palette, filteredProps),
@@ -164,8 +162,11 @@ const ButtonComponent = React.forwardRef<
             justify-content: center;
             text-align: center;
             white-space: nowrap;
-            transition: background-color 200ms ease 0ms, box-shadow 200ms ease 0ms,
-              border 200ms ease 0ms, color 200ms ease 0ms;
+            transition:
+              background-color 200ms ease 0ms,
+              box-shadow 200ms ease 0ms,
+              border 200ms ease 0ms,
+              color 200ms ease 0ms;
             position: relative;
             overflow: hidden;
             color: ${color};

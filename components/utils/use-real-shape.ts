@@ -17,8 +17,8 @@ export const getRealShape = (el: HTMLElement | null): ShapeType => {
     const strVal = str.includes('px')
       ? +str.split('px')[0]
       : str.includes('%')
-      ? +str.split('%')[0] * parentNum * 0.01
-      : str
+        ? +str.split('%')[0] * parentNum * 0.01
+        : str
 
     return Number.isNaN(+strVal) ? 0 : +strVal
   }

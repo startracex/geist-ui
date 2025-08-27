@@ -42,7 +42,6 @@ export type TableProps<TableDataItem extends TableDataItemBase> = Props<TableDat
 function TableComponent<TableDataItem extends TableDataItemBase>(
   tableProps: React.PropsWithChildren<TableProps<TableDataItem>>,
 ) {
-  /* eslint-disable  @typescript-eslint/no-unused-vars */
   const {
     children,
     data: customData,
@@ -57,7 +56,6 @@ function TableComponent<TableDataItem extends TableDataItemBase>(
     ...props
   } = tableProps as React.PropsWithChildren<TableProps<TableDataItem>> &
     typeof defaultProps
-  /* eslint-enable @typescript-eslint/no-unused-vars */
   const { SCALES } = useScale()
   const ref = useRef<HTMLTableElement>(null)
   const [{ width }, updateShape] = useRealShape<HTMLTableElement>(ref)

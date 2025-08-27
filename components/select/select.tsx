@@ -243,7 +243,9 @@ const SelectComponent = React.forwardRef<SelectRef, React.PropsWithChildren<Sele
               cursor: ${disabled ? 'not-allowed' : 'pointer'};
               max-width: 90vw;
               overflow: hidden;
-              transition: border 150ms ease-in 0s, color 200ms ease-out 0s,
+              transition:
+                border 150ms ease-in 0s,
+                color 200ms ease-out 0s,
                 box-shadow 200ms ease 0s;
               border: 1px solid ${border};
               border-radius: ${theme.layout.radius};
