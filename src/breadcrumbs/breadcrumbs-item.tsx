@@ -26,14 +26,7 @@ const BreadcrumbsItem = React.forwardRef<
   React.PropsWithChildren<BreadcrumbsItemProps>
 >(
   (
-    {
-      href,
-      nextLink,
-      onClick,
-      children,
-      className,
-      ...props
-    }: BreadcrumbsItemProps,
+    { href, nextLink, onClick, children, className, ...props }: BreadcrumbsItemProps,
     ref: React.Ref<HTMLAnchorElement>,
   ) => {
     const isLink = useMemo(() => href !== undefined || nextLink, [href, nextLink])

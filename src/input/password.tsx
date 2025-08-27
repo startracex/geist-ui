@@ -21,11 +21,7 @@ const InputPasswordComponent = React.forwardRef<
   React.PropsWithChildren<InputPasswordProps>
 >(
   (
-    {
-      hideToggle,
-      children,
-      ...props
-    }: React.PropsWithChildren<InputPasswordProps>,
+    { hideToggle, children, ...props }: React.PropsWithChildren<InputPasswordProps>,
     ref: React.Ref<HTMLInputElement | null>,
   ) => {
     const { getAllScaleProps } = useScale()

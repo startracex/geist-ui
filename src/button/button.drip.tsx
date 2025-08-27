@@ -14,12 +14,7 @@ const defaultProps = {
 
 export type ButtonDrip = Props
 
-const ButtonDrip: React.FC<ButtonDrip> = ({
-  x,
-  y,
-  color,
-  onCompleted,
-}: ButtonDrip) => {
+const ButtonDrip: React.FC<ButtonDrip> = ({ x, y, color, onCompleted }: ButtonDrip) => {
   const dripRef = useRef<HTMLDivElement>(null)
   /* istanbul ignore next */
   const top = Number.isNaN(+y) ? 0 : y - 10

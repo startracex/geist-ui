@@ -18,12 +18,7 @@ const UserLink = React.forwardRef<
   React.PropsWithChildren<UserLinkProps>
 >(
   (
-    {
-      href,
-      className,
-      children,
-      ...props
-    }: React.PropsWithChildren<UserLinkProps>,
+    { href, className, children, ...props }: React.PropsWithChildren<UserLinkProps>,
     ref: React.Ref<HTMLAnchorElement>,
   ) => {
     return (

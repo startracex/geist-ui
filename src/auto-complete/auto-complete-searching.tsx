@@ -14,10 +14,7 @@ export type AutoCompleteSearchProps = Props & React.HTMLAttributes<any>
 
 const AutoCompleteSearchComponent: React.FC<
   React.PropsWithChildren<AutoCompleteSearchProps>
-> = ({
-  children,
-  className,
-}: React.PropsWithChildren<AutoCompleteSearchProps>) => {
+> = ({ children, className }: React.PropsWithChildren<AutoCompleteSearchProps>) => {
   const theme = useTheme()
   const { SCALES } = useScale()
 

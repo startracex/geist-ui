@@ -22,12 +22,7 @@ const SliderDot = React.forwardRef<
   React.PropsWithChildren<SliderDotProps>
 >(
   (
-    {
-      children,
-      disabled,
-      left,
-      isClick,
-    }: React.PropsWithChildren<SliderDotProps>,
+    { children, disabled, left, isClick }: React.PropsWithChildren<SliderDotProps>,
     ref: React.Ref<HTMLDivElement>,
   ) => {
     const theme = useTheme()
